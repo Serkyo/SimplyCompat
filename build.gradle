@@ -81,6 +81,9 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:architectury-api-419699:${architectury_version}")
     // Simply More
     implementation fg.deobf("curse.maven:simply-more-1095252:${simply_more_version}")
+    // Ice And Fire
+    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:${iaf_version}")
+    runtimeOnly fg.deobf("curse.maven:citadel-331936:${citadel_version}")
 }
 
 mixin {
