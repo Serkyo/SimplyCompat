@@ -2,6 +2,8 @@ package com.serkyo.simplycompat;
 
 import com.mojang.logging.LogUtils;
 import com.serkyo.simplycompat.config.SCModCommonConfigs;
+import com.serkyo.simplycompat.core.SCCreativeTab;
+import com.serkyo.simplycompat.core.SCItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +24,8 @@ public class SimplyCompat
 
     public SimplyCompat(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        SCCreativeTab.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
