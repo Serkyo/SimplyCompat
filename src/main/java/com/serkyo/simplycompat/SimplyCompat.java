@@ -1,4 +1,4 @@
-package com.serkyo.defaultmod;
+package com.serkyo.simplycompat;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -11,13 +11,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(DefaultMod.MOD_ID)
-public class DefaultMod
+@Mod(SimplyCompat.MOD_ID)
+public class SimplyCompat
 {
-    public static final String MOD_ID = "defaultmod";
+    public static final String MOD_ID = "simplycompat";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public DefaultMod(FMLJavaModLoadingContext context) {
+    public SimplyCompat(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
