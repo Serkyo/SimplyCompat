@@ -5,7 +5,7 @@ public class WeaponRegistrationUtils {
         return (int) (materialDamageModifier + weaponType.getPositiveModifier() - weaponType.getNegativeModifier());
     }
 
-    public static int getSimplyWeaponSpeed(WeaponType weaponType) {
-        return (int) weaponType.getAttackSpeed();
+    public static float getSimplyWeaponSpeed(WeaponType weaponType) {
+        return (float) weaponType.getAttackSpeed();
     }
 }

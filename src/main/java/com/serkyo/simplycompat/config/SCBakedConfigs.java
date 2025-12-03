@@ -5,15 +5,15 @@ import com.serkyo.simplycompat.SimplyCompat;
 import java.util.Arrays;
 
 public class SCBakedConfigs {
-    public static float COPPER_DAMAGE_MODIFIER;
-    public static float SILVER_DAMAGE_MODIFIER;
-    public static float SILVER_BONUS_DAMAGE;
-    public static float MYRMEX_DAMAGE_MODIFIER;
-    public static float MYRMEX_BONUS_DAMAGE;
-    public static float DRAGONBONE_DAMAGE_MODIFIER;
-    public static float INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
-    public static float INFUSED_DRAGONBONE_BONUS_DAMAGE;
-    public static float DRAGONSTEEL_DAMAGE_MODIFIER;
+    public static int COPPER_DAMAGE_MODIFIER;
+    public static int SILVER_DAMAGE_MODIFIER;
+    public static int SILVER_BONUS_DAMAGE;
+    public static int MYRMEX_DAMAGE_MODIFIER;
+    public static int MYRMEX_BONUS_DAMAGE;
+    public static int DRAGONBONE_DAMAGE_MODIFIER;
+    public static int INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
+    public static int INFUSED_DRAGONBONE_BONUS_DAMAGE;
+    public static int DRAGONSTEEL_DAMAGE_MODIFIER;
 
     public static void bakeCommon() {
         SimplyCompat.LOGGER.debug("Loading common configuration from file ...");

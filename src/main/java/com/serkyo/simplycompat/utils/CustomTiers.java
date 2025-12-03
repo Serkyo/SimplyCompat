@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 public enum CustomTiers implements Tier {
-    COPPER(2, 300, 0.0F, 0.7F, 10, () -> Ingredient.of(Items.COPPER_INGOT));
+    COPPER(2, 300, 0.7F, 0.0F, 10, () -> Ingredient.of(Items.COPPER_INGOT));
 
     private final int level;
     private final int uses;
