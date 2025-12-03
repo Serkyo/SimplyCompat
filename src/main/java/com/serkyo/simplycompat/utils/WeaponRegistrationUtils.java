@@ -1,7 +1,7 @@
 package com.serkyo.simplycompat.utils;
 
 public class WeaponRegistrationUtils {
-    public static int getSimplyWeaponDamage(float materialDamageModifier, WeaponType weaponType) {
+    public static int getSimplyWeaponDamage(int materialDamageModifier, WeaponType weaponType) {
         return (int) (materialDamageModifier + weaponType.getPositiveModifier() - weaponType.getNegativeModifier());
     }
 
