@@ -77,7 +77,7 @@ dependencies {
 
     // Simply Swords
     implementation fg.deobf("curse.maven:simply-swords-659887:${simply_swords_version}")
-    runtimeOnly fg.deobf("curse.maven:cloth-config-348521:${cloth_config_version}")
+    implementation fg.deobf("curse.maven:cloth-config-348521:${cloth_config_version}")
     runtimeOnly fg.deobf("curse.maven:architectury-api-419699:${architectury_version}")
     // Simply More
     implementation fg.deobf("curse.maven:simply-more-1095252:${simply_more_version}")
