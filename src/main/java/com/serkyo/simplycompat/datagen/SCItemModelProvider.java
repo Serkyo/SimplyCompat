@@ -42,7 +42,7 @@ public class SCItemModelProvider extends ItemModelProvider {
         handheldSimplyWeapon(IceAndFireCompat.COPPER_PERNACH, WeaponType.PERNACH);
         handheldSimplyWeapon(IceAndFireCompat.COPPER_QUARTERSTAFF, WeaponType.QUARTERSTAFF);
         handheldSimplyWeapon(IceAndFireCompat.COPPER_GREAT_SPEAR, WeaponType.GREAT_SPEAR);
-        handheldSimplyWeapon(IceAndFireCompat.COPPER_DEER_HORNS, WeaponType.DEER_HORN);
+        handheldSimplyWeapon(IceAndFireCompat.COPPER_DEER_HORNS, WeaponType.DEER_HORNS);
     }
 
     private ItemModelBuilder handheldSimplyWeapon(RegistryObject<Item> item, WeaponType weaponType) {

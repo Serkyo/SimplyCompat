@@ -25,7 +25,7 @@ public enum WeaponType {
     PERNACH("pernach/", 3, -SimplyConfigValues.attributesSimplyMore.getPernachDamageModifier(), SimplyConfigValues.attributesSimplyMore.getPernachSwingSpeed()),
     QUARTERSTAFF("quarterstaff/", 3, -SimplyConfigValues.attributesSimplyMore.getQuarterstaffDamageModifier(), SimplyConfigValues.attributesSimplyMore.getQuarterstaffSwingSpeed()),
     GREAT_SPEAR("great_spear/", 3, -SimplyConfigValues.attributesSimplyMore.getGreatSpearDamageModifier(), SimplyConfigValues.attributesSimplyMore.getGreatSpearSwingSpeed()),
-    DEER_HORNS("deer_horn/", 3, -SimplyConfigValues.attributesSimplyMore.getDeerHornsDamageModifier(), SimplyConfigValues.attributesSimplyMore.getDeerHornsSwingSpeed());
+    DEER_HORNS("deer_horns/", 3, -SimplyConfigValues.attributesSimplyMore.getDeerHornsDamageModifier(), SimplyConfigValues.attributesSimplyMore.getDeerHornsSwingSpeed());
 
     private final String ressourcePath;
     private final double positiveModifier;

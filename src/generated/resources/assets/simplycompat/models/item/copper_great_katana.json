@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "simplycompat:item/great_katana/copper_great_katana"
+  }
+}
