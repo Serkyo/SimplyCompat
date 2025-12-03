@@ -2,19 +2,19 @@ package com.serkyo.simplycompat.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
-public class SCModCommonConfigs {
+public class SCCommonConfigs {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
 
-    private static final ForgeConfigSpec.ConfigValue<Float> COPPER_DAMAGE_MODIFIER;
-    private static final ForgeConfigSpec.ConfigValue<Float> SILVER_DAMAGE_MODIFIER;
-    private static final ForgeConfigSpec.ConfigValue<Float> SILVER_BONUS_DAMAGE;
-    private static final ForgeConfigSpec.ConfigValue<Float> MYRMEX_DAMAGE_MODIFIER;
-    private static final ForgeConfigSpec.ConfigValue<Float> MYRMEX_BONUS_DAMAGE;
-    private static final ForgeConfigSpec.ConfigValue<Float> DRAGONBONE_DAMAGE_MODIFIER;
-    private static final ForgeConfigSpec.ConfigValue<Float> INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
-    private static final ForgeConfigSpec.ConfigValue<Float> INFUSED_DRAGONBONE_BONUS_DAMAGE;
-    private static final ForgeConfigSpec.ConfigValue<Float> DRAGONSTEEL_DAMAGE_MODIFIER;
+    public static final ForgeConfigSpec.ConfigValue<Float> COPPER_DAMAGE_MODIFIER;
+    public static final ForgeConfigSpec.ConfigValue<Float> SILVER_DAMAGE_MODIFIER;
+    public static final ForgeConfigSpec.ConfigValue<Float> SILVER_BONUS_DAMAGE;
+    public static final ForgeConfigSpec.ConfigValue<Float> MYRMEX_DAMAGE_MODIFIER;
+    public static final ForgeConfigSpec.ConfigValue<Float> MYRMEX_BONUS_DAMAGE;
+    public static final ForgeConfigSpec.ConfigValue<Float> DRAGONBONE_DAMAGE_MODIFIER;
+    public static final ForgeConfigSpec.ConfigValue<Float> INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
+    public static final ForgeConfigSpec.ConfigValue<Float> INFUSED_DRAGONBONE_BONUS_DAMAGE;
+    public static final ForgeConfigSpec.ConfigValue<Float> DRAGONSTEEL_DAMAGE_MODIFIER;
 
     static {
         BUILDER.push("Weapon Attributes");
