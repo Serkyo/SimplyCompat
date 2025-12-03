@@ -1,6 +1,7 @@
 package com.serkyo.simplycompat.datagen;
 
 import com.serkyo.simplycompat.SimplyCompat;
+import com.serkyo.simplycompat.compat.IceAndFireCompat;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,7 +17,31 @@ public class SCItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        handheldItem(IceAndFireCompat.COPPER_LONGSWORD);
+        handheldItem(IceAndFireCompat.COPPER_TWINBLADE);
+        handheldItem(IceAndFireCompat.COPPER_RAPIER);
+        handheldItem(IceAndFireCompat.COPPER_KATANA);
+        handheldItem(IceAndFireCompat.COPPER_SAI);
+        handheldItem(IceAndFireCompat.COPPER_SPEAR);
+        handheldItem(IceAndFireCompat.COPPER_GLAIVE);
+        handheldItem(IceAndFireCompat.COPPER_WARGLAIVE);
+        handheldItem(IceAndFireCompat.COPPER_CUTLASS);
+        handheldItem(IceAndFireCompat.COPPER_CLAYMORE);
+        handheldItem(IceAndFireCompat.COPPER_GREATHAMMER);
+        handheldItem(IceAndFireCompat.COPPER_GREATAXE);
+        handheldItem(IceAndFireCompat.COPPER_CHAKRAM);
+        handheldItem(IceAndFireCompat.COPPER_SCYTHE);
+        handheldItem(IceAndFireCompat.COPPER_HALBERD);
+        handheldItem(IceAndFireCompat.COPPER_GREAT_KATANA);
+        handheldItem(IceAndFireCompat.COPPER_GRANDSWORD);
+        handheldItem(IceAndFireCompat.COPPER_BACKHAND_BLADE);
+        handheldItem(IceAndFireCompat.COPPER_LANCE);
+        handheldItem(IceAndFireCompat.COPPER_KHOPESH);
+        handheldItem(IceAndFireCompat.COPPER_DAGGER);
+        handheldItem(IceAndFireCompat.COPPER_PERNACH);
+        handheldItem(IceAndFireCompat.COPPER_QUARTERSTAFF);
+        handheldItem(IceAndFireCompat.COPPER_GREAT_SPEAR);
+        handheldItem(IceAndFireCompat.COPPER_DEER_HORNS);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
