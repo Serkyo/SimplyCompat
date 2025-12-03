@@ -6,7 +6,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 public class SCItems {
     public static void register(IEventBus eventBus) {
         if (IceAndFireCompat.isPresent()) {
-            IceAndFireCompat.IAF_COMPAT_ITEMS.register(eventBus);
+            IceAndFireCompat.register(eventBus);
         }
     }
 }
