@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "simplymore:item/template/great_katana",
   "textures": {
     "layer0": "simplycompat:item/great_katana/copper_great_katana"
   }

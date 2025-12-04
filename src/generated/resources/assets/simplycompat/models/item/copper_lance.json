@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "simplyswords:item/template_claymore",
   "textures": {
     "layer0": "simplycompat:item/lance/copper_lance"
   }

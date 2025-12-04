@@ -47,7 +47,7 @@ public class SCItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder handheldSimplyWeapon(RegistryObject<Item> item, WeaponType weaponType) {
         return withExistingParent(item.getId().getPath(),
-                ResourceLocation.parse("item/handheld")).texture("layer0",
+                weaponType.getParentModel()).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(SimplyCompat.MOD_ID, "item/" + weaponType.getRessourcePath() + item.getId().getPath()));
     }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "simplyswords:item/template_reworked_greathammer",
   "textures": {
     "layer0": "simplycompat:item/greathammer/copper_greathammer"
   }

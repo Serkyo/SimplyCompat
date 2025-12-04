@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "simplyswords:item/template_chakram",
   "textures": {
     "layer0": "simplycompat:item/chakram/copper_chakram"
   }
