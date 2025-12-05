@@ -43,6 +43,32 @@ public class SCItemModelProvider extends ItemModelProvider {
         handheldSimplyWeapon(IceAndFireCompat.COPPER_QUARTERSTAFF, WeaponType.QUARTERSTAFF);
         handheldSimplyWeapon(IceAndFireCompat.COPPER_GREAT_SPEAR, WeaponType.GREAT_SPEAR);
         handheldSimplyWeapon(IceAndFireCompat.COPPER_DEER_HORNS, WeaponType.DEER_HORNS);
+
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_LONGSWORD, WeaponType.LONGSWORD);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_TWINBLADE, WeaponType.TWINBLADE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_RAPIER, WeaponType.RAPIER);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_KATANA, WeaponType.KATANA);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_SAI, WeaponType.SAI);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_SPEAR, WeaponType.SPEAR);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_GLAIVE, WeaponType.GLAIVE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_WARGLAIVE, WeaponType.WARGLAIVE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_CUTLASS, WeaponType.CUTLASS);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_CLAYMORE, WeaponType.CLAYMORE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_GREATHAMMER, WeaponType.GREATHAMMER);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_GREATAXE, WeaponType.GREATAXE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_CHAKRAM, WeaponType.CHAKRAM);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_SCYTHE, WeaponType.SCYTHE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_HALBERD, WeaponType.HALBERD);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_GREAT_KATANA, WeaponType.GREAT_KATANA);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_GRANDSWORD, WeaponType.GRANDSWORD);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_BACKHAND_BLADE, WeaponType.BACKHAND_BLADE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_LANCE, WeaponType.LANCE);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_KHOPESH, WeaponType.KHOPESH);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_DAGGER, WeaponType.DAGGER);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_PERNACH, WeaponType.PERNACH);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_QUARTERSTAFF, WeaponType.QUARTERSTAFF);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_GREAT_SPEAR, WeaponType.GREAT_SPEAR);
+        handheldSimplyWeapon(IceAndFireCompat.SILVER_DEER_HORNS, WeaponType.DEER_HORNS);
     }
 
     private ItemModelBuilder handheldSimplyWeapon(RegistryObject<Item> item, WeaponType weaponType) {

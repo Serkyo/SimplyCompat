@@ -1,6 +1,8 @@
 package com.serkyo.simplycompat.compat;
 
 import com.serkyo.simplycompat.SimplyCompat;
+import com.serkyo.simplycompat.item.SCSMSilverWeapon;
+import com.serkyo.simplycompat.item.SCSSSilverWeapon;
 import com.serkyo.simplycompat.item.SCSimplyMore;
 import com.serkyo.simplycompat.item.SCSimplySword;
 import com.serkyo.simplycompat.utils.CustomTiers;
@@ -67,6 +69,57 @@ public class IceAndFireCompat {
     public static final RegistryObject<Item> COPPER_DEER_HORNS = IAF_COMPAT_ITEMS.register("copper_deer_horns",
             () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.DEER_HORNS, "minecraft:copper_ingot"));
 
+    public static final RegistryObject<Item> SILVER_LONGSWORD = IAF_COMPAT_ITEMS.register("silver_longsword",
+            () -> new SCSSSilverWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> SILVER_TWINBLADE = IAF_COMPAT_ITEMS.register("silver_twinblade",
+            () -> new SCSSSilverWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> SILVER_RAPIER = IAF_COMPAT_ITEMS.register("silver_rapier",
+            () -> new SCSSSilverWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> SILVER_KATANA = IAF_COMPAT_ITEMS.register("silver_katana",
+            () -> new SCSSSilverWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> SILVER_SAI = IAF_COMPAT_ITEMS.register("silver_sai",
+            () -> new SCSSSilverWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> SILVER_SPEAR = IAF_COMPAT_ITEMS.register("silver_spear",
+            () -> new SCSSSilverWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> SILVER_GLAIVE = IAF_COMPAT_ITEMS.register("silver_glaive",
+            () -> new SCSSSilverWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> SILVER_WARGLAIVE = IAF_COMPAT_ITEMS.register("silver_warglaive",
+            () -> new SCSSSilverWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> SILVER_CUTLASS = IAF_COMPAT_ITEMS.register("silver_cutlass",
+            () -> new SCSSSilverWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> SILVER_CLAYMORE = IAF_COMPAT_ITEMS.register("silver_claymore",
+            () -> new SCSSSilverWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> SILVER_GREATHAMMER = IAF_COMPAT_ITEMS.register("silver_greathammer",
+            () -> new SCSSSilverWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> SILVER_GREATAXE = IAF_COMPAT_ITEMS.register("silver_greataxe",
+            () -> new SCSSSilverWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> SILVER_CHAKRAM = IAF_COMPAT_ITEMS.register("silver_chakram",
+            () -> new SCSSSilverWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> SILVER_SCYTHE = IAF_COMPAT_ITEMS.register("silver_scythe",
+            () -> new SCSSSilverWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> SILVER_HALBERD = IAF_COMPAT_ITEMS.register("silver_halberd",
+            () -> new SCSSSilverWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> SILVER_GREAT_KATANA = IAF_COMPAT_ITEMS.register("silver_great_katana",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> SILVER_GRANDSWORD = IAF_COMPAT_ITEMS.register("silver_grandsword",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> SILVER_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("silver_backhand_blade",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> SILVER_LANCE = IAF_COMPAT_ITEMS.register("silver_lance",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.LANCE));
+    public static final RegistryObject<Item> SILVER_KHOPESH = IAF_COMPAT_ITEMS.register("silver_khopesh",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.KHOPESH));
+    public static final RegistryObject<Item> SILVER_DAGGER = IAF_COMPAT_ITEMS.register("silver_dagger",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.DAGGER));
+    public static final RegistryObject<Item> SILVER_PERNACH = IAF_COMPAT_ITEMS.register("silver_pernach",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.PERNACH));
+    public static final RegistryObject<Item> SILVER_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("silver_quarterstaff",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> SILVER_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("silver_great_spear",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> SILVER_DEER_HORNS = IAF_COMPAT_ITEMS.register("silver_deer_horns",
+            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.DEER_HORNS));
+
     public static boolean isPresent() {
         return ModList.get().isLoaded("iceandfire");
     }
@@ -101,5 +154,31 @@ public class IceAndFireCompat {
         output.accept(IceAndFireCompat.COPPER_QUARTERSTAFF.get());
         output.accept(IceAndFireCompat.COPPER_GREAT_SPEAR.get());
         output.accept(IceAndFireCompat.COPPER_DEER_HORNS.get());
+
+        output.accept(IceAndFireCompat.SILVER_LONGSWORD.get());
+        output.accept(IceAndFireCompat.SILVER_TWINBLADE.get());
+        output.accept(IceAndFireCompat.SILVER_RAPIER.get());
+        output.accept(IceAndFireCompat.SILVER_KATANA.get());
+        output.accept(IceAndFireCompat.SILVER_SAI.get());
+        output.accept(IceAndFireCompat.SILVER_SPEAR.get());
+        output.accept(IceAndFireCompat.SILVER_GLAIVE.get());
+        output.accept(IceAndFireCompat.SILVER_WARGLAIVE.get());
+        output.accept(IceAndFireCompat.SILVER_CUTLASS.get());
+        output.accept(IceAndFireCompat.SILVER_CLAYMORE.get());
+        output.accept(IceAndFireCompat.SILVER_GREATHAMMER.get());
+        output.accept(IceAndFireCompat.SILVER_GREATAXE.get());
+        output.accept(IceAndFireCompat.SILVER_CHAKRAM.get());
+        output.accept(IceAndFireCompat.SILVER_SCYTHE.get());
+        output.accept(IceAndFireCompat.SILVER_HALBERD.get());
+        output.accept(IceAndFireCompat.SILVER_GREAT_KATANA.get());
+        output.accept(IceAndFireCompat.SILVER_GRANDSWORD.get());
+        output.accept(IceAndFireCompat.SILVER_BACKHAND_BLADE.get());
+        output.accept(IceAndFireCompat.SILVER_LANCE.get());
+        output.accept(IceAndFireCompat.SILVER_KHOPESH.get());
+        output.accept(IceAndFireCompat.SILVER_DAGGER.get());
+        output.accept(IceAndFireCompat.SILVER_PERNACH.get());
+        output.accept(IceAndFireCompat.SILVER_QUARTERSTAFF.get());
+        output.accept(IceAndFireCompat.SILVER_GREAT_SPEAR.get());
+        output.accept(IceAndFireCompat.SILVER_DEER_HORNS.get());
     }
 }

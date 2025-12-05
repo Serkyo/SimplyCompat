@@ -1,0 +1,6 @@
+{
+  "parent": "simplymore:item/template/khopesh",
+  "textures": {
+    "layer0": "simplycompat:item/khopesh/silver_khopesh"
+  }
+}
