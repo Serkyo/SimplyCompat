@@ -7,15 +7,14 @@ import com.serkyo.simplycompat.item.SCSimplyMore;
 import com.serkyo.simplycompat.item.SCSimplySword;
 import com.serkyo.simplycompat.utils.CustomTiers;
 import com.serkyo.simplycompat.utils.WeaponType;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class IceAndFireCompat {
+public class IceAndFireCompat extends Compat {
+    public static final IceAndFireCompat INSTANCE = new IceAndFireCompat();
+
     public static final DeferredRegister<Item> IAF_COMPAT_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SimplyCompat.MOD_ID);
 
     public static final RegistryObject<Item> COPPER_LONGSWORD = IAF_COMPAT_ITEMS.register("copper_longsword",
@@ -120,65 +119,7 @@ public class IceAndFireCompat {
     public static final RegistryObject<Item> SILVER_DEER_HORNS = IAF_COMPAT_ITEMS.register("silver_deer_horns",
             () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.DEER_HORNS));
 
-    public static boolean isPresent() {
-        return ModList.get().isLoaded("iceandfire");
-    }
-
-    public static void register(IEventBus eventBus) {
-        IAF_COMPAT_ITEMS.register(eventBus);
-    }
-
-    public static void addToCreativeMenu(CreativeModeTab.Output output) {
-        output.accept(IceAndFireCompat.COPPER_LONGSWORD.get());
-        output.accept(IceAndFireCompat.COPPER_TWINBLADE.get());
-        output.accept(IceAndFireCompat.COPPER_RAPIER.get());
-        output.accept(IceAndFireCompat.COPPER_KATANA.get());
-        output.accept(IceAndFireCompat.COPPER_SAI.get());
-        output.accept(IceAndFireCompat.COPPER_SPEAR.get());
-        output.accept(IceAndFireCompat.COPPER_GLAIVE.get());
-        output.accept(IceAndFireCompat.COPPER_WARGLAIVE.get());
-        output.accept(IceAndFireCompat.COPPER_CUTLASS.get());
-        output.accept(IceAndFireCompat.COPPER_CLAYMORE.get());
-        output.accept(IceAndFireCompat.COPPER_GREATHAMMER.get());
-        output.accept(IceAndFireCompat.COPPER_GREATAXE.get());
-        output.accept(IceAndFireCompat.COPPER_CHAKRAM.get());
-        output.accept(IceAndFireCompat.COPPER_SCYTHE.get());
-        output.accept(IceAndFireCompat.COPPER_HALBERD.get());
-        output.accept(IceAndFireCompat.COPPER_GREAT_KATANA.get());
-        output.accept(IceAndFireCompat.COPPER_GRANDSWORD.get());
-        output.accept(IceAndFireCompat.COPPER_BACKHAND_BLADE.get());
-        output.accept(IceAndFireCompat.COPPER_LANCE.get());
-        output.accept(IceAndFireCompat.COPPER_KHOPESH.get());
-        output.accept(IceAndFireCompat.COPPER_DAGGER.get());
-        output.accept(IceAndFireCompat.COPPER_PERNACH.get());
-        output.accept(IceAndFireCompat.COPPER_QUARTERSTAFF.get());
-        output.accept(IceAndFireCompat.COPPER_GREAT_SPEAR.get());
-        output.accept(IceAndFireCompat.COPPER_DEER_HORNS.get());
-
-        output.accept(IceAndFireCompat.SILVER_LONGSWORD.get());
-        output.accept(IceAndFireCompat.SILVER_TWINBLADE.get());
-        output.accept(IceAndFireCompat.SILVER_RAPIER.get());
-        output.accept(IceAndFireCompat.SILVER_KATANA.get());
-        output.accept(IceAndFireCompat.SILVER_SAI.get());
-        output.accept(IceAndFireCompat.SILVER_SPEAR.get());
-        output.accept(IceAndFireCompat.SILVER_GLAIVE.get());
-        output.accept(IceAndFireCompat.SILVER_WARGLAIVE.get());
-        output.accept(IceAndFireCompat.SILVER_CUTLASS.get());
-        output.accept(IceAndFireCompat.SILVER_CLAYMORE.get());
-        output.accept(IceAndFireCompat.SILVER_GREATHAMMER.get());
-        output.accept(IceAndFireCompat.SILVER_GREATAXE.get());
-        output.accept(IceAndFireCompat.SILVER_CHAKRAM.get());
-        output.accept(IceAndFireCompat.SILVER_SCYTHE.get());
-        output.accept(IceAndFireCompat.SILVER_HALBERD.get());
-        output.accept(IceAndFireCompat.SILVER_GREAT_KATANA.get());
-        output.accept(IceAndFireCompat.SILVER_GRANDSWORD.get());
-        output.accept(IceAndFireCompat.SILVER_BACKHAND_BLADE.get());
-        output.accept(IceAndFireCompat.SILVER_LANCE.get());
-        output.accept(IceAndFireCompat.SILVER_KHOPESH.get());
-        output.accept(IceAndFireCompat.SILVER_DAGGER.get());
-        output.accept(IceAndFireCompat.SILVER_PERNACH.get());
-        output.accept(IceAndFireCompat.SILVER_QUARTERSTAFF.get());
-        output.accept(IceAndFireCompat.SILVER_GREAT_SPEAR.get());
-        output.accept(IceAndFireCompat.SILVER_DEER_HORNS.get());
+    protected IceAndFireCompat() {
+        super("iceandfire", IAF_COMPAT_ITEMS);
     }
 }

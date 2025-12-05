@@ -16,8 +16,8 @@ public class SCItems {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
-        if (IceAndFireCompat.isPresent()) {
-            IceAndFireCompat.register(eventBus);
+        if (IceAndFireCompat.INSTANCE.isPresent()) {
+            IceAndFireCompat.INSTANCE.register(eventBus);
         }
     }
 }

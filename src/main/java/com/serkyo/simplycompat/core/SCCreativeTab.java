@@ -19,8 +19,8 @@ public class SCCreativeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath("simplyswords", "empowered_remnant"))))
             .title(Component.translatable("creativetab.simplycompat_tab"))
             .displayItems((pParameters, pOutput) -> {
-                if (IceAndFireCompat.isPresent()) {
-                    IceAndFireCompat.addToCreativeMenu(pOutput);
+                if (IceAndFireCompat.INSTANCE.isPresent()) {
+                    IceAndFireCompat.INSTANCE.addToCreativeMenu(pOutput);
                 }
             })
             .build());
