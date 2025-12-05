@@ -13,9 +13,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.rosemarythyme.simplymore.item.normal.SimplyMoreSwordItem;
 
+@Mod.EventBusSubscriber(modid = SimplyCompat.MOD_ID)
 public class SCSimplyMore extends SimplyMoreSwordItem {
     private final WeaponType weaponType;
 
@@ -25,7 +27,7 @@ public class SCSimplyMore extends SimplyMoreSwordItem {
     }
 
     @SubscribeEvent
-    public static void simplyCompatAttackAttributeEvent(ItemAttributeModifierEvent event) {
+    public static void simplyMoreCompatAttackAttributeEvent(ItemAttributeModifierEvent event) {
         Item item = event.getItemStack().getItem();
         ResourceLocation id = ForgeRegistries.ITEMS.getKey(item);
 
@@ -39,7 +41,7 @@ public class SCSimplyMore extends SimplyMoreSwordItem {
                             .findAny()
                             .ifPresent(attributeModifier -> event.removeModifier(Attributes.ATTACK_DAMAGE, attributeModifier));
                     int newDamage = 0;
-                    if (weapon.getTier() instanceof CustomTiers customTier) {
+                    if (weapon.getTier() == CustomTiers.COPPER) {
                         newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.COPPER_DAMAGE_MODIFIER, weapon.getWeaponType());
                     }
                     else if (weapon.getTier() == CustomTiers.SILVER) {

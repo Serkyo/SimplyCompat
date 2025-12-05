@@ -41,7 +41,7 @@ public class SCSimplySword extends SimplySwordsSwordItem {
                             .findAny()
                             .ifPresent(attributeModifier -> event.removeModifier(Attributes.ATTACK_DAMAGE, attributeModifier));
                     int newDamage = 0;
-                    if (weapon.getTier() instanceof CustomTiers customTier) {
+                    if (weapon.getTier() == CustomTiers.COPPER) {
                         newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.COPPER_DAMAGE_MODIFIER, weapon.getWeaponType());
                     }
                     else if (weapon.getTier() == CustomTiers.SILVER) {
