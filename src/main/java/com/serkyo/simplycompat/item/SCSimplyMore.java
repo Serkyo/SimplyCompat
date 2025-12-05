@@ -47,6 +47,9 @@ public class SCSimplyMore extends SimplyMoreSwordItem {
                     else if (weapon.getTier() == CustomTiers.SILVER) {
                         newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.SILVER_DAMAGE_MODIFIER, weapon.getWeaponType());
                     }
+                    else if (weapon.getTier() == CustomTiers.MYRMEX_DESERT || weapon.getTier() == CustomTiers.MYRMEX_DESERT_VENOM || weapon.getTier() == CustomTiers.MYRMEX_JUNGLE || weapon.getTier() == CustomTiers.MYRMEX_JUNGLE_VENOM) {
+                        newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.MYRMEX_DAMAGE_MODIFIER, weapon.getWeaponType());
+                    }
                     event.addModifier(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID,  SimplyCompat.MOD_ID + ":override", newDamage, AttributeModifier.Operation.ADDITION));
                 }
             }
