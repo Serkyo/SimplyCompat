@@ -29,6 +29,6 @@ public class SCSMSilverWeapon extends SCSimplyMore {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("simplycompat.silverweapons.hurt", SCBakedConfigs.SILVER_BONUS_DAMAGE).withStyle(ChatFormatting.GREEN));
+        pTooltipComponents.add(Component.translatable("simplycompat.silverweapons.bonus_damage", SCBakedConfigs.SILVER_BONUS_DAMAGE).withStyle(ChatFormatting.GREEN));
     }
 }
