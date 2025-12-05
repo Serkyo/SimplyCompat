@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "O": {
+      "item": "simplycompat:copper_nugget"
+    },
+    "S": {
+      "item": "iceandfire:copper_sword"
+    }
+  },
+  "pattern": [
+    "O#O",
+    "###",
+    "#S#"
+  ],
+  "result": {
+    "item": "simplycompat:copper_grandsword"
+  },
+  "show_notification": true
+}

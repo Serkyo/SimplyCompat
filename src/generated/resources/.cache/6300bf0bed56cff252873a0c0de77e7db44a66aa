@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-05T09:48:11.093714441	Item Models: simplycompat
+// 1.20.1	2025-12-05T13:26:20.114293022	Item Models: simplycompat
 afabd8a3282a7f613c460467bd22b4f472971848 assets/simplycompat/models/item/copper_backhand_blade.json
 46e43f11cb63f84e2113f82307145d2e433c4dc2 assets/simplycompat/models/item/copper_chakram.json
 517e0646ff68fb5313d33e19d13581f8f6b55817 assets/simplycompat/models/item/copper_claymore.json
@@ -16,6 +16,7 @@ ae0dfc83148088795e13ce579805ea864bd89854 assets/simplycompat/models/item/copper_
 23f63923b4097cfd28d6407297639a39335c8906 assets/simplycompat/models/item/copper_khopesh.json
 439d474a45306e761669bbd6b041a79cd0561920 assets/simplycompat/models/item/copper_lance.json
 199b1ce555a6fff3408f5cf040bcd179b8fdd119 assets/simplycompat/models/item/copper_longsword.json
+554450c0c926f59bbf26ff5ec70491840d609c0a assets/simplycompat/models/item/copper_nugget.json
 2dfb37451a5bdd9ae8b85b63cf59666c4eca5bd0 assets/simplycompat/models/item/copper_pernach.json
 5bce9740f4a01d4526018fe0121d834f75541d87 assets/simplycompat/models/item/copper_quarterstaff.json
 77d542b469d9974e71cb1eca96cae456942f5a10 assets/simplycompat/models/item/copper_rapier.json

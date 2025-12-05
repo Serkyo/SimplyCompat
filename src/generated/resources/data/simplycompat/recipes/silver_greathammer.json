@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:silver_ingot"
+    },
+    "O": {
+      "item": "iceandfire:silver_nugget"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "OOO",
+    " X "
+  ],
+  "result": {
+    "item": "simplycompat:silver_greathammer"
+  },
+  "show_notification": true
+}

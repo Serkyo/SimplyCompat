@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "O": {
+      "item": "simplycompat:copper_nugget"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "OXO",
+    " X "
+  ],
+  "result": {
+    "item": "simplycompat:copper_greataxe"
+  },
+  "show_notification": true
+}

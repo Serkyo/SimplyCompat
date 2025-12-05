@@ -27,7 +27,7 @@
   "item.simplycompat.copper_great_spear": "Copper Great Spear",
   "item.simplycompat.copper_deer_horns": "Copper Deer Horns",
 
-  "simplycompat.silverweapons.hurt": "+%d damage against undead",
+  "simplycompat.silverweapons.bonus_damage": "+%d damage against undead",
   "item.simplycompat.silver_longsword": "Silver Longsword",
   "item.simplycompat.silver_twinblade": "Silver Twinblade",
   "item.simplycompat.silver_rapier": "Silver Rapier",

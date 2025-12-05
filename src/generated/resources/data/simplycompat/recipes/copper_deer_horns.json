@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "O": {
+      "item": "simplycompat:copper_nugget"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#O ",
+    "OXO",
+    " O#"
+  ],
+  "result": {
+    "item": "simplycompat:copper_deer_horns"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:silver_ingot"
+    },
+    "O": {
+      "item": "iceandfire:silver_nugget"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  X",
+    " #X",
+    "O  "
+  ],
+  "result": {
+    "item": "simplycompat:silver_backhand_blade"
+  },
+  "show_notification": true
+}

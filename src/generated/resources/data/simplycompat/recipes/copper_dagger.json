@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "O": {
+      "item": "simplycompat:copper_nugget"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "O#X"
+  ],
+  "result": {
+    "item": "simplycompat:copper_dagger"
+  },
+  "show_notification": true
+}
