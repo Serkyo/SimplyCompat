@@ -22,7 +22,7 @@ public class SCCommonConfigs {
         COPPER_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the copper weapons")
                 .define("copperDamageModifier", 3);
         SILVER_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the silver weapons")
-                .define("silverDamageModifier", 3);
+                .define("silverDamageModifier", 4);
         SILVER_BONUS_DAMAGE = BUILDER.comment("Additional damage caused by the silver weapons against undead")
                 .define("silverBonusDamage", 2);
         MYRMEX_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the myrmex weapons")
