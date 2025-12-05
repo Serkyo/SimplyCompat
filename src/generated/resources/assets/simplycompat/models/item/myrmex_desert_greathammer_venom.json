@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_reworked_greathammer",
+  "textures": {
+    "layer0": "simplycompat:item/greathammer/myrmex_desert_greathammer_venom"
+  }
+}

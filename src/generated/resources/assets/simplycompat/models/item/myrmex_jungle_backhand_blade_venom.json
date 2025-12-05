@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_longdagger",
+  "textures": {
+    "layer0": "simplycompat:item/backhand_blade/myrmex_jungle_backhand_blade_venom"
+  }
+}

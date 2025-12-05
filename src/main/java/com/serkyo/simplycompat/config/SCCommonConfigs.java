@@ -11,6 +11,9 @@ public class SCCommonConfigs {
     public static ForgeConfigSpec.ConfigValue<Integer> SILVER_BONUS_DAMAGE;
     public static ForgeConfigSpec.ConfigValue<Integer> MYRMEX_DAMAGE_MODIFIER;
     public static ForgeConfigSpec.ConfigValue<Integer> MYRMEX_BONUS_DAMAGE;
+    public static ForgeConfigSpec.ConfigValue<Integer> MYRMEX_STINGER_POISON_CHANCE;
+    public static ForgeConfigSpec.ConfigValue<Integer> MYRMEX_STINGER_POISON_DURATION;
+    public static ForgeConfigSpec.ConfigValue<Integer> MYRMEX_STINGER_POISON_LEVEL;
     public static ForgeConfigSpec.ConfigValue<Integer> DRAGONBONE_DAMAGE_MODIFIER;
     public static ForgeConfigSpec.ConfigValue<Integer> INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
     public static ForgeConfigSpec.ConfigValue<Integer> INFUSED_DRAGONBONE_BONUS_DAMAGE;
@@ -29,6 +32,12 @@ public class SCCommonConfigs {
                 .define("myrmexDamageModifier", 3);
         MYRMEX_BONUS_DAMAGE = BUILDER.comment("Additional damage caused by the myrmex weapons against non-arthopods and deathworms")
                 .define("myrmexAdditionalDamage", 4);
+        MYRMEX_STINGER_POISON_CHANCE = BUILDER.comment("Chance of myrmex stinger weapons to poison the enemy on hit")
+                .defineInRange("myrmexStingerPoisonChance", 30, 0, 100);
+        MYRMEX_STINGER_POISON_DURATION = BUILDER.comment("Duration of the poison effect inflicted by the myrmex stinger weapons (in seconds)")
+                .defineInRange("myrmexPoisonDuration", 3, 1, Integer.MAX_VALUE);
+        MYRMEX_STINGER_POISON_LEVEL = BUILDER.comment("Level of the poison effect inflicted by the myrmex stinger weapons")
+                .defineInRange("myrmexPoisonLevel", 1, 1, 255);
         DRAGONBONE_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the dragon bone weapons")
                 .define("dragonBoneDamageModifier", 3);
         INFUSED_DRAGONBONE_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the infused dragon bone weapons")

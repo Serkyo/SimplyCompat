@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_katana",
+  "textures": {
+    "layer0": "simplycompat:item/katana/myrmex_desert_katana_venom"
+  }
+}

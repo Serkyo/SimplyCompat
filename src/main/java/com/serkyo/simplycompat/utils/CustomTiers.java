@@ -11,7 +11,11 @@ import java.util.function.Supplier;
 
 public enum CustomTiers implements Tier {
     COPPER(2, 300, 0.7F, 0.0F, 10, () -> Ingredient.of(Items.COPPER_INGOT)),
-    SILVER(2, 460, 11.0F, 1.0F, 18, () -> Ingredient.of(IafItemRegistry.SILVER_INGOT.get()));
+    SILVER(2, 460, 11.0F, 1.0F, 18, () -> Ingredient.of(IafItemRegistry.SILVER_INGOT.get())),
+    MYRMEX_DESERT(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_DESERT_CHITIN.get())),
+    MYRMEX_DESERT_VENOM(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_DESERT_CHITIN.get())),
+    MYRMEX_JUNGLE(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get())),
+    MYRMEX_JUNGLE_VENOM(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get()));
 
     private final int level;
     private final int uses;

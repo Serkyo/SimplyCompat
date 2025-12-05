@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    },
+    "O": {
+      "item": "iceandfire:myrmex_desert_resin"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#O ",
+    "OXO",
+    " O#"
+  ],
+  "result": {
+    "item": "simplycompat:myrmex_desert_deer_horns_venom"
+  },
+  "show_notification": true
+}

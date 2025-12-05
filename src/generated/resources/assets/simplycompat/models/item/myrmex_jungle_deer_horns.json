@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "simplycompat:item/deer_horns/myrmex_jungle_deer_horns"
+  }
+}

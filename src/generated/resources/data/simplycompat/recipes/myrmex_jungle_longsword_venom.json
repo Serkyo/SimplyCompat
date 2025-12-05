@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:myrmex_jungle_chitin"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "X  ",
+    " # ",
+    "  #"
+  ],
+  "result": {
+    "item": "simplycompat:myrmex_jungle_longsword_venom"
+  },
+  "show_notification": true
+}

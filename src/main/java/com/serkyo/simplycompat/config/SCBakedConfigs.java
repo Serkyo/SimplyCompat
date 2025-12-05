@@ -1,6 +1,7 @@
 package com.serkyo.simplycompat.config;
 
 import com.serkyo.simplycompat.SimplyCompat;
+import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.Arrays;
 
@@ -10,6 +11,9 @@ public class SCBakedConfigs {
     public static int SILVER_BONUS_DAMAGE;
     public static int MYRMEX_DAMAGE_MODIFIER;
     public static int MYRMEX_BONUS_DAMAGE;
+    public static int MYRMEX_STINGER_POISON_CHANCE;
+    public static int MYRMEX_STINGER_POISON_DURATION;
+    public static int MYRMEX_STINGER_POISON_LEVEL;
     public static int DRAGONBONE_DAMAGE_MODIFIER;
     public static int INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
     public static int INFUSED_DRAGONBONE_BONUS_DAMAGE;
@@ -23,6 +27,9 @@ public class SCBakedConfigs {
             SILVER_BONUS_DAMAGE = SCCommonConfigs.SILVER_BONUS_DAMAGE.get();
             MYRMEX_DAMAGE_MODIFIER = SCCommonConfigs.MYRMEX_DAMAGE_MODIFIER.get();
             MYRMEX_BONUS_DAMAGE = SCCommonConfigs.MYRMEX_BONUS_DAMAGE.get();
+            MYRMEX_STINGER_POISON_CHANCE = SCCommonConfigs.MYRMEX_STINGER_POISON_CHANCE.get();
+            MYRMEX_STINGER_POISON_DURATION = SCCommonConfigs.MYRMEX_STINGER_POISON_DURATION.get();
+            MYRMEX_STINGER_POISON_LEVEL = SCCommonConfigs.MYRMEX_STINGER_POISON_LEVEL.get();
             DRAGONBONE_DAMAGE_MODIFIER = SCCommonConfigs.DRAGONBONE_DAMAGE_MODIFIER.get();
             INFUSED_DRAGONBONE_DAMAGE_MODIFIER = SCCommonConfigs.INFUSED_DRAGONBONE_DAMAGE_MODIFIER.get();
             INFUSED_DRAGONBONE_BONUS_DAMAGE = SCCommonConfigs.INFUSED_DRAGONBONE_BONUS_DAMAGE.get();

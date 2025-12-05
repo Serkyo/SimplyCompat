@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/big_handheld",
+  "textures": {
+    "layer0": "simplycompat:item/glaive/myrmex_jungle_glaive_venom"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " #",
+    "X "
+  ],
+  "result": {
+    "item": "simplycompat:myrmex_desert_sai"
+  },
+  "show_notification": true
+}

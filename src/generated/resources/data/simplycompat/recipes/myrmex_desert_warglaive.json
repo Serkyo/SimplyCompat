@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:myrmex_desert_chitin"
+    },
+    "O": {
+      "item": "iceandfire:myrmex_desert_resin"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " O ",
+    "#X#"
+  ],
+  "result": {
+    "item": "simplycompat:myrmex_desert_warglaive"
+  },
+  "show_notification": true
+}

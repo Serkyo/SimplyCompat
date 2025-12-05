@@ -1,10 +1,7 @@
 package com.serkyo.simplycompat.compat;
 
 import com.serkyo.simplycompat.SimplyCompat;
-import com.serkyo.simplycompat.item.SCSMSilverWeapon;
-import com.serkyo.simplycompat.item.SCSSSilverWeapon;
-import com.serkyo.simplycompat.item.SCSimplyMore;
-import com.serkyo.simplycompat.item.SCSimplySword;
+import com.serkyo.simplycompat.item.*;
 import com.serkyo.simplycompat.utils.CustomTiers;
 import com.serkyo.simplycompat.utils.WeaponType;
 import net.minecraft.world.item.Item;
@@ -13,8 +10,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class IceAndFireCompat extends Compat {
-    public static final IceAndFireCompat INSTANCE = new IceAndFireCompat();
-
     public static final DeferredRegister<Item> IAF_COMPAT_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SimplyCompat.MOD_ID);
 
     public static final RegistryObject<Item> COPPER_LONGSWORD = IAF_COMPAT_ITEMS.register("copper_longsword",
@@ -118,6 +113,212 @@ public class IceAndFireCompat extends Compat {
             () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GREAT_SPEAR));
     public static final RegistryObject<Item> SILVER_DEER_HORNS = IAF_COMPAT_ITEMS.register("silver_deer_horns",
             () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.DEER_HORNS));
+
+    public static final RegistryObject<Item> MYRMEX_DESERT_LONGSWORD = IAF_COMPAT_ITEMS.register("myrmex_desert_longsword",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.LONGSWORD, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_TWINBLADE = IAF_COMPAT_ITEMS.register("myrmex_desert_twinblade",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.TWINBLADE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_RAPIER = IAF_COMPAT_ITEMS.register("myrmex_desert_rapier",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.RAPIER, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_KATANA = IAF_COMPAT_ITEMS.register("myrmex_desert_katana",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.KATANA, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_SAI = IAF_COMPAT_ITEMS.register("myrmex_desert_sai",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.SAI, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_SPEAR = IAF_COMPAT_ITEMS.register("myrmex_desert_spear",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.SPEAR, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GLAIVE = IAF_COMPAT_ITEMS.register("myrmex_desert_glaive",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.GLAIVE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_WARGLAIVE = IAF_COMPAT_ITEMS.register("myrmex_desert_warglaive",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.WARGLAIVE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_CUTLASS = IAF_COMPAT_ITEMS.register("myrmex_desert_cutlass",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.CUTLASS, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_CLAYMORE = IAF_COMPAT_ITEMS.register("myrmex_desert_claymore",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.CLAYMORE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREATHAMMER = IAF_COMPAT_ITEMS.register("myrmex_desert_greathammer",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.GREATHAMMER, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREATAXE = IAF_COMPAT_ITEMS.register("myrmex_desert_greataxe",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.GREATAXE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_CHAKRAM = IAF_COMPAT_ITEMS.register("myrmex_desert_chakram",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.CHAKRAM, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_SCYTHE = IAF_COMPAT_ITEMS.register("myrmex_desert_scythe",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.SCYTHE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_HALBERD = IAF_COMPAT_ITEMS.register("myrmex_desert_halberd",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.HALBERD, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_KATANA = IAF_COMPAT_ITEMS.register("myrmex_desert_great_katana",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GRANDSWORD = IAF_COMPAT_ITEMS.register("myrmex_desert_grandsword",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("myrmex_desert_backhand_blade",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_LANCE = IAF_COMPAT_ITEMS.register("myrmex_desert_lance",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_KHOPESH = IAF_COMPAT_ITEMS.register("myrmex_desert_khopesh",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_DAGGER = IAF_COMPAT_ITEMS.register("myrmex_desert_dagger",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_PERNACH = IAF_COMPAT_ITEMS.register("myrmex_desert_pernach",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("myrmex_desert_quarterstaff",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("myrmex_desert_great_spear",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_DEER_HORNS = IAF_COMPAT_ITEMS.register("myrmex_desert_deer_horns",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_desert_chitin"));
+
+    public static final RegistryObject<Item> MYRMEX_DESERT_LONGSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_longsword_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.LONGSWORD, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_TWINBLADE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_twinblade_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.TWINBLADE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_RAPIER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_rapier_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.RAPIER, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_KATANA_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_katana_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.KATANA, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_SAI_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_sai_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.SAI, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_SPEAR_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_spear_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.SPEAR, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GLAIVE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_glaive_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.GLAIVE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_WARGLAIVE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_warglaive_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.WARGLAIVE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_CUTLASS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_cutlass_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.CUTLASS, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_CLAYMORE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_claymore_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.CLAYMORE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREATHAMMER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_greathammer_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.GREATHAMMER, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREATAXE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_greataxe_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.GREATAXE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_CHAKRAM_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_chakram_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.CHAKRAM, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_SCYTHE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_scythe_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.SCYTHE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_HALBERD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_halberd_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.HALBERD, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_KATANA_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_great_katana_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GRANDSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_grandsword_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_BACKHAND_BLADE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_backhand_blade_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_LANCE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_lance_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_KHOPESH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_khopesh_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_DAGGER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_dagger_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_PERNACH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_pernach_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_QUARTERSTAFF_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_quarterstaff_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_SPEAR_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_great_spear_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_desert_chitin"));
+    public static final RegistryObject<Item> MYRMEX_DESERT_DEER_HORNS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_deer_horns_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_desert_chitin"));
+
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_LONGSWORD = IAF_COMPAT_ITEMS.register("myrmex_jungle_longsword",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.LONGSWORD, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_TWINBLADE = IAF_COMPAT_ITEMS.register("myrmex_jungle_twinblade",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.TWINBLADE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_RAPIER = IAF_COMPAT_ITEMS.register("myrmex_jungle_rapier",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.RAPIER, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_KATANA = IAF_COMPAT_ITEMS.register("myrmex_jungle_katana",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.KATANA, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_SAI = IAF_COMPAT_ITEMS.register("myrmex_jungle_sai",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.SAI, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_SPEAR = IAF_COMPAT_ITEMS.register("myrmex_jungle_spear",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.SPEAR, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GLAIVE = IAF_COMPAT_ITEMS.register("myrmex_jungle_glaive",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.GLAIVE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_WARGLAIVE = IAF_COMPAT_ITEMS.register("myrmex_jungle_warglaive",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.WARGLAIVE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_CUTLASS = IAF_COMPAT_ITEMS.register("myrmex_jungle_cutlass",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.CUTLASS, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_CLAYMORE = IAF_COMPAT_ITEMS.register("myrmex_jungle_claymore",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.CLAYMORE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREATHAMMER = IAF_COMPAT_ITEMS.register("myrmex_jungle_greathammer",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.GREATHAMMER, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREATAXE = IAF_COMPAT_ITEMS.register("myrmex_jungle_greataxe",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.GREATAXE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_CHAKRAM = IAF_COMPAT_ITEMS.register("myrmex_jungle_chakram",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.CHAKRAM, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_SCYTHE = IAF_COMPAT_ITEMS.register("myrmex_jungle_scythe",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.SCYTHE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_HALBERD = IAF_COMPAT_ITEMS.register("myrmex_jungle_halberd",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.HALBERD, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_katana",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GRANDSWORD = IAF_COMPAT_ITEMS.register("myrmex_jungle_grandsword",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("myrmex_jungle_backhand_blade",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_LANCE = IAF_COMPAT_ITEMS.register("myrmex_jungle_lance",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_KHOPESH = IAF_COMPAT_ITEMS.register("myrmex_jungle_khopesh",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_DAGGER = IAF_COMPAT_ITEMS.register("myrmex_jungle_dagger",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_PERNACH = IAF_COMPAT_ITEMS.register("myrmex_jungle_pernach",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("myrmex_jungle_quarterstaff",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_spear",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_DEER_HORNS = IAF_COMPAT_ITEMS.register("myrmex_jungle_deer_horns",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
+
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_LONGSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_longsword_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.LONGSWORD, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_TWINBLADE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_twinblade_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.TWINBLADE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_RAPIER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_rapier_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.RAPIER, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_KATANA_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_katana_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.KATANA, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_SAI_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_sai_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.SAI, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_SPEAR_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_spear_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.SPEAR, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GLAIVE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_glaive_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.GLAIVE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_WARGLAIVE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_warglaive_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.WARGLAIVE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_CUTLASS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_cutlass_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.CUTLASS, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_CLAYMORE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_claymore_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.CLAYMORE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREATHAMMER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_greathammer_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.GREATHAMMER, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREATAXE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_greataxe_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.GREATAXE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_CHAKRAM_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_chakram_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.CHAKRAM, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_SCYTHE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_scythe_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.SCYTHE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_HALBERD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_halberd_venom",
+            () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.HALBERD, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_KATANA_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_katana_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GRANDSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_grandsword_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_BACKHAND_BLADE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_backhand_blade_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_LANCE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_lance_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_KHOPESH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_khopesh_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_DAGGER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_dagger_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_PERNACH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_pernach_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_QUARTERSTAFF_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_quarterstaff_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_SPEAR_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_spear_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_jungle_chitin"));
+    public static final RegistryObject<Item> MYRMEX_JUNGLE_DEER_HORNS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_deer_horns_venom",
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
+
+    public static final IceAndFireCompat INSTANCE = new IceAndFireCompat();
 
     protected IceAndFireCompat() {
         super("iceandfire", IAF_COMPAT_ITEMS);
