@@ -72,7 +72,6 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         quarterstaffRecipe(consumer, IceAndFireCompat.SILVER_QUARTERSTAFF.get(), IafItemRegistry.SILVER_INGOT.get(), "has_silver_ingot");
         greatSpearRecipe(consumer, IceAndFireCompat.SILVER_GREAT_SPEAR.get(), IafItemRegistry.SILVER_INGOT.get(), "has_silver_ingot");
         deerHornsRecipe(consumer, IceAndFireCompat.SILVER_DEER_HORNS.get(), IafItemRegistry.SILVER_INGOT.get(), IafItemRegistry.SILVER_NUGGET.get(), "has_silver_ingot");
-
     }
 
     private void longswordRecipe(Consumer<FinishedRecipe> consumer, ItemLike result, ItemLike ingot, String unlockCriterionName) {
