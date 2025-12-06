@@ -26,19 +26,19 @@ public class SCSSMyrmexWeapon extends SCSimplySword {
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (target.getMobType() == MobType.ARTHROPOD || target instanceof EntityDeathWorm) {
+        if (target.getMobType() != MobType.ARTHROPOD || target instanceof EntityDeathWorm) {
             target.hurt(attacker.damageSources().generic(), SCBakedConfigs.MYRMEX_BONUS_DAMAGE);
         }
         boolean isMyrmexVenomWeapon = getTier() == CustomTiers.MYRMEX_DESERT_VENOM || getTier() == CustomTiers.MYRMEX_JUNGLE_VENOM;
         if (isMyrmexVenomWeapon  && target.level().random.nextFloat() < SCBakedConfigs.MYRMEX_STINGER_POISON_CHANCE / 100F) {
-            target.addEffect(new MobEffectInstance(MobEffects.POISON, SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION, SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL -1, false, true));
+            target.addEffect(new MobEffectInstance(MobEffects.POISON, SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION * 40, SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL -1, false, true));
         }
         return super.hurtEnemy(stack, target, attacker);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("simplycompat.myrmex_weapons.bonus_damage", SCBakedConfigs.SILVER_BONUS_DAMAGE).withStyle(ChatFormatting.GREEN));
+        pTooltipComponents.add(Component.translatable("simplycompat.myrmex_weapons.bonus_damage", SCBakedConfigs.MYRMEX_BONUS_DAMAGE).withStyle(ChatFormatting.GREEN));
         if (getTier() == CustomTiers.MYRMEX_DESERT_VENOM || getTier() == CustomTiers.MYRMEX_JUNGLE_VENOM) {
             pTooltipComponents.add(Component.translatable("simplycompat.myrmex_venomous_weapons.poison_chance", SCBakedConfigs.MYRMEX_STINGER_POISON_CHANCE, TextUtils.formatEffectLevel(SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL - 1), SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION).withStyle(ChatFormatting.GREEN));
         }
