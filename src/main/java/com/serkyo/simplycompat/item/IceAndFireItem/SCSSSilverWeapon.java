@@ -1,6 +1,8 @@
-package com.serkyo.simplycompat.item;
+package com.serkyo.simplycompat.item.IceAndFireItem;
 
 import com.serkyo.simplycompat.config.SCBakedConfigs;
+import com.serkyo.simplycompat.item.SCSimplySword;
+import com.serkyo.simplycompat.item.behavior.SilverWeaponBehavior;
 import com.serkyo.simplycompat.utils.CustomTiers;
 import com.serkyo.simplycompat.utils.WeaponType;
 import net.minecraft.ChatFormatting;
@@ -14,21 +16,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SCSMSilverWeapon extends SCSimplyMore {
-    public SCSMSilverWeapon(Properties settings, WeaponType weaponType) {
-        super(CustomTiers.SILVER, settings, weaponType, "iceandfire:silver_ingot");
+public class SCSSSilverWeapon extends SCSimplySword implements SilverWeaponBehavior {
+    public SCSSSilverWeapon(WeaponType weaponType) {
+        super(CustomTiers.SILVER, weaponType, "iceandfire:silver_ingot");
     }
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (target.getMobType() == MobType.UNDEAD) {
-            target.hurt(attacker.damageSources().magic(), SCBakedConfigs.SILVER_BONUS_DAMAGE);
-        }
+        applySilverDamage(target, attacker);
         return super.hurtEnemy(stack, target, attacker);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("simplycompat.silver_weapons.bonus_damage", SCBakedConfigs.SILVER_BONUS_DAMAGE).withStyle(ChatFormatting.GREEN));
+        applySilverTooltip(pTooltipComponents);
     }
 }

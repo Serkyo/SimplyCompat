@@ -1,0 +1,39 @@
+package com.serkyo.simplycompat.item.IceAndFireItem;
+
+import com.github.alexthe666.iceandfire.entity.EntityDeathWorm;
+import com.serkyo.simplycompat.config.SCBakedConfigs;
+import com.serkyo.simplycompat.item.SCSimplyMore;
+import com.serkyo.simplycompat.item.behavior.MyrmexWeaponBehavior;
+import com.serkyo.simplycompat.utils.CustomTiers;
+import com.serkyo.simplycompat.utils.TextUtils;
+import com.serkyo.simplycompat.utils.WeaponType;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
+public class SCSMMyrmexWeapon extends SCSimplyMore implements MyrmexWeaponBehavior {
+    public SCSMMyrmexWeapon(Tier toolMaterial, WeaponType weaponType, String... repairIngredient) {
+        super(toolMaterial, weaponType, repairIngredient);
+    }
+
+    @Override
+    public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        applyMyrmexDamage(target, attacker, getTier());
+        return super.hurtEnemy(stack, target, attacker);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        applyMyrmexTooltip(pTooltipComponents, getTier());
+    }
+}
