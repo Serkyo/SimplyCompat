@@ -1,0 +1,6 @@
+{
+  "parent": "simplymore:item/template/great_katana",
+  "textures": {
+    "layer0": "simplycompat:item/great_katana/dragonbone_great_katana"
+  }
+}
