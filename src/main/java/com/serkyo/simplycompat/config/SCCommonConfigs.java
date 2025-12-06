@@ -39,9 +39,9 @@ public class SCCommonConfigs {
         MYRMEX_STINGER_POISON_LEVEL = BUILDER.comment("Level of the poison effect inflicted by the myrmex stinger weapons")
                 .defineInRange("myrmexPoisonLevel", 1, 1, 255);
         DRAGONBONE_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the dragon bone weapons")
-                .define("dragonBoneDamageModifier", 3);
+                .define("dragonBoneDamageModifier", 7);
         INFUSED_DRAGONBONE_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the infused dragon bone weapons")
-                .define("infusedDragonBoneDamageModifier", 3);
+                .define("infusedDragonBoneDamageModifier", 8);
         INFUSED_DRAGONBONE_BONUS_DAMAGE = BUILDER.comment("Additional damage caused by the infused dragon bone weapons against dragons of the opposing type. Halved for lightning dragons, as they affect both fire and ice")
                 .define("infusedDragonboneBonusDamage", 8);
         DRAGONSTEEL_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the dragonsteel weapons")
