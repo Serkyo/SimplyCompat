@@ -48,7 +48,6 @@ public class SCCreativeTab {
             while (iterator.hasNext()) {
                 Map.Entry<ItemStack, CreativeModeTab.TabVisibility> entry = iterator.next();
                 ItemStack itemStack = entry.getKey();
-                System.out.println(itemStack.getDisplayName());
                 if (itemStack.getItem() instanceof SCSimplySword) {
                     iterator.remove();
                 }
