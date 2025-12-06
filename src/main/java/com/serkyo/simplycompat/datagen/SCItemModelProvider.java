@@ -19,8 +19,6 @@ public class SCItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(SCItems.COPPER_NUGGET.get());
-
         handheldSimplyWeapon(IceAndFireCompat.COPPER_LONGSWORD, WeaponType.LONGSWORD);
         handheldSimplyWeapon(IceAndFireCompat.COPPER_TWINBLADE, WeaponType.TWINBLADE);
         handheldSimplyWeapon(IceAndFireCompat.COPPER_RAPIER, WeaponType.RAPIER);

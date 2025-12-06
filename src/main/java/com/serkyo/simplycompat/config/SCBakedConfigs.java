@@ -1,7 +1,6 @@
 package com.serkyo.simplycompat.config;
 
 import com.serkyo.simplycompat.SimplyCompat;
-import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.Arrays;
 
