@@ -56,7 +56,7 @@
   "item.simplycompat.silver_deer_horns": "Silver Deer Horns",
 
   "simplycompat.myrmex_weapons.bonus_damage": "+%d damage against non-arthropods and deathworms",
-  "simplycompat.myrmex_venomous_weapons.poison_chance": "+%d chance of inflicting Poison %s for %ds on hit",
+  "simplycompat.myrmex_venomous_weapons.poison_chance": "+%d% chance of inflicting Poison %s for %ds on hit",
 
   "item.simplycompat.myrmex_desert_longsword": "Desert Myrmex Chitin Longsword",
   "item.simplycompat.myrmex_desert_twinblade": "Desert Myrmex Chitin Twinblade",
