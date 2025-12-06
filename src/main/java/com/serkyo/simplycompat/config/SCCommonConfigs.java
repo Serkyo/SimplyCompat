@@ -29,7 +29,7 @@ public class SCCommonConfigs {
         SILVER_BONUS_DAMAGE = BUILDER.comment("Additional damage caused by the silver weapons against undead")
                 .define("silverBonusDamage", 2);
         MYRMEX_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the myrmex weapons")
-                .define("myrmexDamageModifier", 3);
+                .define("myrmexDamageModifier", 4);
         MYRMEX_BONUS_DAMAGE = BUILDER.comment("Additional damage caused by the myrmex weapons against non-arthopods and deathworms")
                 .define("myrmexAdditionalDamage", 4);
         MYRMEX_STINGER_POISON_CHANCE = BUILDER.comment("Chance of myrmex stinger weapons to poison the enemy on hit")
