@@ -15,7 +15,9 @@ public enum CustomTiers implements Tier {
     MYRMEX_DESERT(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_DESERT_CHITIN.get())),
     MYRMEX_DESERT_VENOM(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_DESERT_CHITIN.get())),
     MYRMEX_JUNGLE(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get())),
-    MYRMEX_JUNGLE_VENOM(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get()));
+    MYRMEX_JUNGLE_VENOM(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get())),
+    DRAGONBONE(3, 1660, 10.0F, 4.0F, 22, () -> Ingredient.of(IafItemRegistry.DRAGON_BONE.get())),
+    INFUSED_DRAGONBONE(3, 2000, 10.0F, 5.5F, 22, () -> Ingredient.of(IafItemRegistry.DRAGON_BONE.get()));
 
     private final int level;
     private final int uses;

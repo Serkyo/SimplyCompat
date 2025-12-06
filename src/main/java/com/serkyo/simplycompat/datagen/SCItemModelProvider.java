@@ -2,7 +2,6 @@ package com.serkyo.simplycompat.datagen;
 
 import com.serkyo.simplycompat.SimplyCompat;
 import com.serkyo.simplycompat.compat.IceAndFireCompat;
-import com.serkyo.simplycompat.core.SCItems;
 import com.serkyo.simplycompat.utils.WeaponType;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -174,6 +173,32 @@ public class SCItemModelProvider extends ItemModelProvider {
         handheldSimplyWeapon(IceAndFireCompat.MYRMEX_JUNGLE_QUARTERSTAFF_VENOM, WeaponType.QUARTERSTAFF);
         handheldSimplyWeapon(IceAndFireCompat.MYRMEX_JUNGLE_GREAT_SPEAR_VENOM, WeaponType.GREAT_SPEAR);
         handheldSimplyWeapon(IceAndFireCompat.MYRMEX_JUNGLE_DEER_HORNS_VENOM, WeaponType.DEER_HORNS);
+
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_LONGSWORD, WeaponType.LONGSWORD);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_TWINBLADE, WeaponType.TWINBLADE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_RAPIER, WeaponType.RAPIER);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_KATANA, WeaponType.KATANA);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_SAI, WeaponType.SAI);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_SPEAR, WeaponType.SPEAR);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_GLAIVE, WeaponType.GLAIVE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_WARGLAIVE, WeaponType.WARGLAIVE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_CUTLASS, WeaponType.CUTLASS);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_CLAYMORE, WeaponType.CLAYMORE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_GREATHAMMER, WeaponType.GREATHAMMER);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_GREATAXE, WeaponType.GREATAXE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_CHAKRAM, WeaponType.CHAKRAM);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_SCYTHE, WeaponType.SCYTHE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_HALBERD, WeaponType.HALBERD);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_GREAT_KATANA, WeaponType.GREAT_KATANA);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_GRANDSWORD, WeaponType.GRANDSWORD);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_BACKHAND_BLADE, WeaponType.BACKHAND_BLADE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_LANCE, WeaponType.LANCE);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_KHOPESH, WeaponType.KHOPESH);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_DAGGER, WeaponType.DAGGER);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_PERNACH, WeaponType.PERNACH);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_QUARTERSTAFF, WeaponType.QUARTERSTAFF);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_GREAT_SPEAR, WeaponType.GREAT_SPEAR);
+        handheldSimplyWeapon(IceAndFireCompat.DRAGONBONE_DEER_HORNS, WeaponType.DEER_HORNS);
     }
 
     private ItemModelBuilder handheldSimplyWeapon(RegistryObject<Item> item, WeaponType weaponType) {

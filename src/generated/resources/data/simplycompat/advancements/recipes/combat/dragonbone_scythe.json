@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copper_nugget": {
+    "has_dragonbone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "iceandfire:copper_nugget"
+              "iceandfire:dragonbone"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copper_ingot_from_nugget"
+        "recipe": "simplycompat:dragonbone_scythe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_copper_nugget",
+      "has_dragonbone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copper_ingot_from_nugget"
+      "simplycompat:dragonbone_scythe"
     ]
   },
   "sends_telemetry_event": false

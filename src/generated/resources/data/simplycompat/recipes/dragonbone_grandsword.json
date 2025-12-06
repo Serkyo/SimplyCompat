@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonbone"
+    },
+    "O": {
+      "item": "iceandfire:wither_shard"
+    },
+    "S": {
+      "item": "iceandfire:dragonbone_sword"
+    }
+  },
+  "pattern": [
+    "O#O",
+    "###",
+    "#S#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_grandsword"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonbone"
+    },
+    "X": {
+      "item": "iceandfire:witherbone"
+    }
+  },
+  "pattern": [
+    "  #",
+    " X#",
+    "X  "
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_glaive"
+  },
+  "show_notification": true
+}

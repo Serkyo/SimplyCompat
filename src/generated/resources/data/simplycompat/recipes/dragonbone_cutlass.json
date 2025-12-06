@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonbone"
+    },
+    "O": {
+      "item": "iceandfire:wither_shard"
+    },
+    "X": {
+      "item": "iceandfire:witherbone"
+    }
+  },
+  "pattern": [
+    " O",
+    "##",
+    "X "
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_cutlass"
+  },
+  "show_notification": true
+}

@@ -318,6 +318,57 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> MYRMEX_JUNGLE_DEER_HORNS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_deer_horns_venom",
             () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
 
+    public static final RegistryObject<Item> DRAGONBONE_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonbone_longsword",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.LONGSWORD, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonbone_twinblade",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.TWINBLADE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_RAPIER = IAF_COMPAT_ITEMS.register("dragonbone_rapier",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.RAPIER, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_katana",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.KATANA, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_SAI = IAF_COMPAT_ITEMS.register("dragonbone_sai",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.SAI, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_spear",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.SPEAR, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_GLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_glaive",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.GLAIVE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_warglaive",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.WARGLAIVE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_CUTLASS = IAF_COMPAT_ITEMS.register("dragonbone_cutlass",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.CUTLASS, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonbone_claymore",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.CLAYMORE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonbone_greathammer",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.GREATHAMMER, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_GREATAXE = IAF_COMPAT_ITEMS.register("dragonbone_greataxe",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.GREATAXE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonbone_chakram",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.CHAKRAM, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_SCYTHE = IAF_COMPAT_ITEMS.register("dragonbone_scythe",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.SCYTHE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_HALBERD = IAF_COMPAT_ITEMS.register("dragonbone_halberd",
+            () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.HALBERD, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_great_katana",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonbone_grandsword",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonbone_backhand_blade",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_LANCE = IAF_COMPAT_ITEMS.register("dragonbone_lance",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.LANCE, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_KHOPESH = IAF_COMPAT_ITEMS.register("dragonbone_khopesh",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_DAGGER = IAF_COMPAT_ITEMS.register("dragonbone_dagger",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.DAGGER, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_PERNACH = IAF_COMPAT_ITEMS.register("dragonbone_pernach",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.PERNACH, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonbone_quarterstaff",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_great_spear",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:dragonbone"));
+    public static final RegistryObject<Item> DRAGONBONE_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonbone_deer_horns",
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:dragonbone"));
+
     public static final IceAndFireCompat INSTANCE = new IceAndFireCompat();
 
     protected IceAndFireCompat() {

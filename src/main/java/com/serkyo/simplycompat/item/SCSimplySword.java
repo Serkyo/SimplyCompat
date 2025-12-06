@@ -50,6 +50,12 @@ public class SCSimplySword extends SimplySwordsSwordItem {
                     else if (weapon.getTier() == CustomTiers.MYRMEX_DESERT || weapon.getTier() == CustomTiers.MYRMEX_DESERT_VENOM || weapon.getTier() == CustomTiers.MYRMEX_JUNGLE || weapon.getTier() == CustomTiers.MYRMEX_JUNGLE_VENOM) {
                         newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.MYRMEX_DAMAGE_MODIFIER, weapon.getWeaponType());
                     }
+                    else if (weapon.getTier() == CustomTiers.DRAGONBONE) {
+                        newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.DRAGONBONE_DAMAGE_MODIFIER, weapon.getWeaponType());
+                    }
+                    else if (weapon.getTier() == CustomTiers.INFUSED_DRAGONBONE) {
+                        newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.INFUSED_DRAGONBONE_DAMAGE_MODIFIER, weapon.getWeaponType());
+                    }
                     event.addModifier(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID,  SimplyCompat.MOD_ID + ":override", newDamage, AttributeModifier.Operation.ADDITION));
                 }
             }
