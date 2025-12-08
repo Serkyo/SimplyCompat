@@ -1,18 +1,10 @@
 package com.serkyo.simplycompat.item.IceAndFireItem;
 
-import com.github.alexthe666.iceandfire.entity.EntityDeathWorm;
-import com.serkyo.simplycompat.config.SCBakedConfigs;
 import com.serkyo.simplycompat.item.SCSimplySword;
 import com.serkyo.simplycompat.item.behavior.MyrmexWeaponBehavior;
-import com.serkyo.simplycompat.utils.CustomTiers;
-import com.serkyo.simplycompat.utils.TextUtils;
 import com.serkyo.simplycompat.utils.WeaponType;
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;

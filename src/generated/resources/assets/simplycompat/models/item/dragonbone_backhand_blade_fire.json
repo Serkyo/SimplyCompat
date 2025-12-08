@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_longdagger",
+  "textures": {
+    "layer0": "simplycompat:item/backhand_blade/dragonbone_backhand_blade_fire"
+  }
+}

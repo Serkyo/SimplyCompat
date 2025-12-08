@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/long_handheld",
+  "textures": {
+    "layer0": "simplycompat:item/great_spear/dragonbone_great_spear_fire"
+  }
+}

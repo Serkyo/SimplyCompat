@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "simplycompat:item/pernach/dragonbone_pernach_lightning"
+  }
+}

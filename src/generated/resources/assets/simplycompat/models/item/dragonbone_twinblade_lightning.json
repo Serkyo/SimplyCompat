@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_twinblade",
+  "textures": {
+    "layer0": "simplycompat:item/twinblade/dragonbone_twinblade_lightning"
+  }
+}

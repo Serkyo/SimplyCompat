@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_katana",
+  "textures": {
+    "layer0": "simplycompat:item/katana/dragonbone_katana_ice"
+  }
+}

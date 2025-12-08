@@ -2,6 +2,7 @@ package com.serkyo.simplycompat.compat;
 
 import com.serkyo.simplycompat.SimplyCompat;
 import com.serkyo.simplycompat.item.*;
+import com.serkyo.simplycompat.item.IceAndFireItem.*;
 import com.serkyo.simplycompat.utils.CustomTiers;
 import com.serkyo.simplycompat.utils.WeaponType;
 import net.minecraft.world.item.Item;
@@ -43,25 +44,25 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> COPPER_HALBERD = IAF_COMPAT_ITEMS.register("copper_halberd",
             () -> new SCSimplySword(CustomTiers.COPPER, WeaponType.HALBERD, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_GREAT_KATANA = IAF_COMPAT_ITEMS.register("copper_great_katana",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.GREAT_KATANA, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.GREAT_KATANA, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_GRANDSWORD = IAF_COMPAT_ITEMS.register("copper_grandsword",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.GRANDSWORD, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.GRANDSWORD, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("copper_backhand_blade",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.BACKHAND_BLADE, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.BACKHAND_BLADE, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_LANCE = IAF_COMPAT_ITEMS.register("copper_lance",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.LANCE, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.LANCE, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_KHOPESH = IAF_COMPAT_ITEMS.register("copper_khopesh",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.KHOPESH, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.KHOPESH, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_DAGGER = IAF_COMPAT_ITEMS.register("copper_dagger",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.DAGGER, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.DAGGER, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_PERNACH = IAF_COMPAT_ITEMS.register("copper_pernach",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.PERNACH, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.PERNACH, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("copper_quarterstaff",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.QUARTERSTAFF, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.QUARTERSTAFF, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("copper_great_spear",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.GREAT_SPEAR, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.GREAT_SPEAR, "minecraft:copper_ingot"));
     public static final RegistryObject<Item> COPPER_DEER_HORNS = IAF_COMPAT_ITEMS.register("copper_deer_horns",
-            () -> new SCSimplyMore(CustomTiers.COPPER, new Item.Properties(), WeaponType.DEER_HORNS, "minecraft:copper_ingot"));
+            () -> new SCSimplyMore(CustomTiers.COPPER, WeaponType.DEER_HORNS, "minecraft:copper_ingot"));
 
     public static final RegistryObject<Item> SILVER_LONGSWORD = IAF_COMPAT_ITEMS.register("silver_longsword",
             () -> new SCSSSilverWeapon(WeaponType.LONGSWORD));
@@ -94,25 +95,25 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> SILVER_HALBERD = IAF_COMPAT_ITEMS.register("silver_halberd",
             () -> new SCSSSilverWeapon(WeaponType.HALBERD));
     public static final RegistryObject<Item> SILVER_GREAT_KATANA = IAF_COMPAT_ITEMS.register("silver_great_katana",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GREAT_KATANA));
+            () -> new SCSMSilverWeapon(WeaponType.GREAT_KATANA));
     public static final RegistryObject<Item> SILVER_GRANDSWORD = IAF_COMPAT_ITEMS.register("silver_grandsword",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GRANDSWORD));
+            () -> new SCSMSilverWeapon(WeaponType.GRANDSWORD));
     public static final RegistryObject<Item> SILVER_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("silver_backhand_blade",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.BACKHAND_BLADE));
+            () -> new SCSMSilverWeapon(WeaponType.BACKHAND_BLADE));
     public static final RegistryObject<Item> SILVER_LANCE = IAF_COMPAT_ITEMS.register("silver_lance",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.LANCE));
+            () -> new SCSMSilverWeapon(WeaponType.LANCE));
     public static final RegistryObject<Item> SILVER_KHOPESH = IAF_COMPAT_ITEMS.register("silver_khopesh",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.KHOPESH));
+            () -> new SCSMSilverWeapon(WeaponType.KHOPESH));
     public static final RegistryObject<Item> SILVER_DAGGER = IAF_COMPAT_ITEMS.register("silver_dagger",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.DAGGER));
+            () -> new SCSMSilverWeapon(WeaponType.DAGGER));
     public static final RegistryObject<Item> SILVER_PERNACH = IAF_COMPAT_ITEMS.register("silver_pernach",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.PERNACH));
+            () -> new SCSMSilverWeapon(WeaponType.PERNACH));
     public static final RegistryObject<Item> SILVER_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("silver_quarterstaff",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.QUARTERSTAFF));
+            () -> new SCSMSilverWeapon(WeaponType.QUARTERSTAFF));
     public static final RegistryObject<Item> SILVER_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("silver_great_spear",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.GREAT_SPEAR));
+            () -> new SCSMSilverWeapon(WeaponType.GREAT_SPEAR));
     public static final RegistryObject<Item> SILVER_DEER_HORNS = IAF_COMPAT_ITEMS.register("silver_deer_horns",
-            () -> new SCSMSilverWeapon(new Item.Properties(), WeaponType.DEER_HORNS));
+            () -> new SCSMSilverWeapon(WeaponType.DEER_HORNS));
 
     public static final RegistryObject<Item> MYRMEX_DESERT_LONGSWORD = IAF_COMPAT_ITEMS.register("myrmex_desert_longsword",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.LONGSWORD, "iceandfire:myrmex_desert_chitin"));
@@ -145,25 +146,25 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> MYRMEX_DESERT_HALBERD = IAF_COMPAT_ITEMS.register("myrmex_desert_halberd",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.HALBERD, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_KATANA = IAF_COMPAT_ITEMS.register("myrmex_desert_great_katana",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.GREAT_KATANA, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_GRANDSWORD = IAF_COMPAT_ITEMS.register("myrmex_desert_grandsword",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.GRANDSWORD, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("myrmex_desert_backhand_blade",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_LANCE = IAF_COMPAT_ITEMS.register("myrmex_desert_lance",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.LANCE, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_KHOPESH = IAF_COMPAT_ITEMS.register("myrmex_desert_khopesh",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.KHOPESH, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_DAGGER = IAF_COMPAT_ITEMS.register("myrmex_desert_dagger",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.DAGGER, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_PERNACH = IAF_COMPAT_ITEMS.register("myrmex_desert_pernach",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.PERNACH, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("myrmex_desert_quarterstaff",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.QUARTERSTAFF, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("myrmex_desert_great_spear",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.GREAT_SPEAR, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_DEER_HORNS = IAF_COMPAT_ITEMS.register("myrmex_desert_deer_horns",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT, WeaponType.DEER_HORNS, "iceandfire:myrmex_desert_chitin"));
 
     public static final RegistryObject<Item> MYRMEX_DESERT_LONGSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_longsword_venom",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.LONGSWORD, "iceandfire:myrmex_desert_chitin"));
@@ -196,25 +197,25 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> MYRMEX_DESERT_HALBERD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_halberd_venom",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.HALBERD, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_KATANA_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_great_katana_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.GREAT_KATANA, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_GRANDSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_grandsword_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.GRANDSWORD, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_BACKHAND_BLADE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_backhand_blade_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_LANCE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_lance_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.LANCE, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_KHOPESH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_khopesh_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.KHOPESH, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_DAGGER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_dagger_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.DAGGER, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_PERNACH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_pernach_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.PERNACH, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_QUARTERSTAFF_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_quarterstaff_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.QUARTERSTAFF, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_GREAT_SPEAR_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_great_spear_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.GREAT_SPEAR, "iceandfire:myrmex_desert_chitin"));
     public static final RegistryObject<Item> MYRMEX_DESERT_DEER_HORNS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_desert_deer_horns_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_desert_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_DESERT_VENOM, WeaponType.DEER_HORNS, "iceandfire:myrmex_desert_chitin"));
 
     public static final RegistryObject<Item> MYRMEX_JUNGLE_LONGSWORD = IAF_COMPAT_ITEMS.register("myrmex_jungle_longsword",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.LONGSWORD, "iceandfire:myrmex_jungle_chitin"));
@@ -247,25 +248,25 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> MYRMEX_JUNGLE_HALBERD = IAF_COMPAT_ITEMS.register("myrmex_jungle_halberd",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.HALBERD, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_katana",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.GREAT_KATANA, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_GRANDSWORD = IAF_COMPAT_ITEMS.register("myrmex_jungle_grandsword",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.GRANDSWORD, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("myrmex_jungle_backhand_blade",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_LANCE = IAF_COMPAT_ITEMS.register("myrmex_jungle_lance",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.LANCE, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_KHOPESH = IAF_COMPAT_ITEMS.register("myrmex_jungle_khopesh",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.KHOPESH, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_DAGGER = IAF_COMPAT_ITEMS.register("myrmex_jungle_dagger",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.DAGGER, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_PERNACH = IAF_COMPAT_ITEMS.register("myrmex_jungle_pernach",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.PERNACH, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("myrmex_jungle_quarterstaff",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.QUARTERSTAFF, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_spear",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.GREAT_SPEAR, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_DEER_HORNS = IAF_COMPAT_ITEMS.register("myrmex_jungle_deer_horns",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE, WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
 
     public static final RegistryObject<Item> MYRMEX_JUNGLE_LONGSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_longsword_venom",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.LONGSWORD, "iceandfire:myrmex_jungle_chitin"));
@@ -298,25 +299,25 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> MYRMEX_JUNGLE_HALBERD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_halberd_venom",
             () -> new SCSSMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.HALBERD, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_KATANA_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_katana_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.GREAT_KATANA, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_GRANDSWORD_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_grandsword_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.GRANDSWORD, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_BACKHAND_BLADE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_backhand_blade_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.BACKHAND_BLADE, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_LANCE_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_lance_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.LANCE, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.LANCE, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_KHOPESH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_khopesh_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.KHOPESH, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_DAGGER_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_dagger_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.DAGGER, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.DAGGER, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_PERNACH_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_pernach_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.PERNACH, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.PERNACH, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_QUARTERSTAFF_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_quarterstaff_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.QUARTERSTAFF, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_GREAT_SPEAR_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_great_spear_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.GREAT_SPEAR, "iceandfire:myrmex_jungle_chitin"));
     public static final RegistryObject<Item> MYRMEX_JUNGLE_DEER_HORNS_VENOM = IAF_COMPAT_ITEMS.register("myrmex_jungle_deer_horns_venom",
-            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
+            () -> new SCSMMyrmexWeapon(CustomTiers.MYRMEX_JUNGLE_VENOM, WeaponType.DEER_HORNS, "iceandfire:myrmex_jungle_chitin"));
 
     public static final RegistryObject<Item> DRAGONBONE_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonbone_longsword",
             () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.LONGSWORD, "iceandfire:dragonbone"));
@@ -349,25 +350,178 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> DRAGONBONE_HALBERD = IAF_COMPAT_ITEMS.register("dragonbone_halberd",
             () -> new SCSimplySword(CustomTiers.DRAGONBONE, WeaponType.HALBERD, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_great_katana",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.GREAT_KATANA, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.GREAT_KATANA, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonbone_grandsword",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.GRANDSWORD, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.GRANDSWORD, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonbone_backhand_blade",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.BACKHAND_BLADE, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.BACKHAND_BLADE, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_LANCE = IAF_COMPAT_ITEMS.register("dragonbone_lance",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.LANCE, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.LANCE, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_KHOPESH = IAF_COMPAT_ITEMS.register("dragonbone_khopesh",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.KHOPESH, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.KHOPESH, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_DAGGER = IAF_COMPAT_ITEMS.register("dragonbone_dagger",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.DAGGER, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.DAGGER, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_PERNACH = IAF_COMPAT_ITEMS.register("dragonbone_pernach",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.PERNACH, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.PERNACH, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonbone_quarterstaff",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.QUARTERSTAFF, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.QUARTERSTAFF, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_great_spear",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.GREAT_SPEAR, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.GREAT_SPEAR, "iceandfire:dragonbone"));
     public static final RegistryObject<Item> DRAGONBONE_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonbone_deer_horns",
-            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, new Item.Properties(), WeaponType.DEER_HORNS, "iceandfire:dragonbone"));
+            () -> new SCSimplyMore(CustomTiers.DRAGONBONE, WeaponType.DEER_HORNS, "iceandfire:dragonbone"));
+
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonbone_longsword_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonbone_twinblade_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_RAPIER = IAF_COMPAT_ITEMS.register("dragonbone_rapier_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_katana_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_SAI = IAF_COMPAT_ITEMS.register("dragonbone_sai_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_spear_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_GLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_glaive_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_warglaive_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_CUTLASS = IAF_COMPAT_ITEMS.register("dragonbone_cutlass_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonbone_claymore_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonbone_greathammer_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_GREATAXE = IAF_COMPAT_ITEMS.register("dragonbone_greataxe_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonbone_chakram_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_SCYTHE = IAF_COMPAT_ITEMS.register("dragonbone_scythe_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_HALBERD = IAF_COMPAT_ITEMS.register("dragonbone_halberd_fire",
+            () -> new SCSSFireDragonboneWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_great_katana_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonbone_grandsword_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonbone_backhand_blade_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_LANCE = IAF_COMPAT_ITEMS.register("dragonbone_lance_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.LANCE));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_KHOPESH = IAF_COMPAT_ITEMS.register("dragonbone_khopesh_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.KHOPESH));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_DAGGER = IAF_COMPAT_ITEMS.register("dragonbone_dagger_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.DAGGER));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_PERNACH = IAF_COMPAT_ITEMS.register("dragonbone_pernach_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.PERNACH));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonbone_quarterstaff_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_great_spear_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> FIRE_DRAGONBONE_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonbone_deer_horns_fire",
+            () -> new SCSMFireDragonboneWeapon(WeaponType.DEER_HORNS));
+
+    public static final RegistryObject<Item> ICE_DRAGONBONE_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonbone_longsword_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonbone_twinblade_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_RAPIER = IAF_COMPAT_ITEMS.register("dragonbone_rapier_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_katana_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_SAI = IAF_COMPAT_ITEMS.register("dragonbone_sai_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_spear_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_GLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_glaive_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_warglaive_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_CUTLASS = IAF_COMPAT_ITEMS.register("dragonbone_cutlass_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonbone_claymore_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonbone_greathammer_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_GREATAXE = IAF_COMPAT_ITEMS.register("dragonbone_greataxe_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonbone_chakram_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_SCYTHE = IAF_COMPAT_ITEMS.register("dragonbone_scythe_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_HALBERD = IAF_COMPAT_ITEMS.register("dragonbone_halberd_ice",
+            () -> new SCSSIceDragonboneWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_great_katana_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonbone_grandsword_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonbone_backhand_blade_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_LANCE = IAF_COMPAT_ITEMS.register("dragonbone_lance_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.LANCE));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_KHOPESH = IAF_COMPAT_ITEMS.register("dragonbone_khopesh_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.KHOPESH));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_DAGGER = IAF_COMPAT_ITEMS.register("dragonbone_dagger_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.DAGGER));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_PERNACH = IAF_COMPAT_ITEMS.register("dragonbone_pernach_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.PERNACH));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonbone_quarterstaff_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_great_spear_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> ICE_DRAGONBONE_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonbone_deer_horns_ice",
+            () -> new SCSMIceDragonboneWeapon(WeaponType.DEER_HORNS));
+
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonbone_longsword_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonbone_twinblade_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_RAPIER = IAF_COMPAT_ITEMS.register("dragonbone_rapier_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_katana_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_SAI = IAF_COMPAT_ITEMS.register("dragonbone_sai_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_spear_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_GLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_glaive_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonbone_warglaive_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_CUTLASS = IAF_COMPAT_ITEMS.register("dragonbone_cutlass_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonbone_claymore_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonbone_greathammer_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_GREATAXE = IAF_COMPAT_ITEMS.register("dragonbone_greataxe_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonbone_chakram_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_SCYTHE = IAF_COMPAT_ITEMS.register("dragonbone_scythe_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_HALBERD = IAF_COMPAT_ITEMS.register("dragonbone_halberd_lightning",
+            () -> new SCSSLightningDragonboneWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonbone_great_katana_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonbone_grandsword_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonbone_backhand_blade_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_LANCE = IAF_COMPAT_ITEMS.register("dragonbone_lance_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.LANCE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_KHOPESH = IAF_COMPAT_ITEMS.register("dragonbone_khopesh_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.KHOPESH));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_DAGGER = IAF_COMPAT_ITEMS.register("dragonbone_dagger_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.DAGGER));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_PERNACH = IAF_COMPAT_ITEMS.register("dragonbone_pernach_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.PERNACH));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonbone_quarterstaff_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonbone_great_spear_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonbone_deer_horns_lightning",
+            () -> new SCSMLightningDragonboneWeapon(WeaponType.DEER_HORNS));
 
     public static final IceAndFireCompat INSTANCE = new IceAndFireCompat();
 

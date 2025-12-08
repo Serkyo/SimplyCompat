@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "simplycompat:dragonbone_greataxe"
+    },
+    "X": {
+      "item": "iceandfire:fire_dragon_blood"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_greataxe_fire"
+  },
+  "show_notification": true
+}

@@ -6,6 +6,7 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -199,6 +200,84 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         quarterstaffRecipe(consumer, IceAndFireCompat.DRAGONBONE_QUARTERSTAFF.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonbone");
         greatSpearRecipe(consumer, IceAndFireCompat.DRAGONBONE_GREAT_SPEAR.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonbone");
         deerHornsRecipe(consumer, IceAndFireCompat.DRAGONBONE_DEER_HORNS.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonbone");
+
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_LONGSWORD.get(), IceAndFireCompat.DRAGONBONE_LONGSWORD.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_TWINBLADE.get(), IceAndFireCompat.DRAGONBONE_TWINBLADE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_RAPIER.get(), IceAndFireCompat.DRAGONBONE_RAPIER.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_KATANA.get(), IceAndFireCompat.DRAGONBONE_KATANA.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_SAI.get(), IceAndFireCompat.DRAGONBONE_SAI.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_SPEAR.get(), IceAndFireCompat.DRAGONBONE_SPEAR.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_GLAIVE.get(), IceAndFireCompat.DRAGONBONE_GLAIVE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_WARGLAIVE.get(), IceAndFireCompat.DRAGONBONE_WARGLAIVE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_CUTLASS.get(), IceAndFireCompat.DRAGONBONE_CUTLASS.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_CLAYMORE.get(), IceAndFireCompat.DRAGONBONE_CLAYMORE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_GREATHAMMER.get(), IceAndFireCompat.DRAGONBONE_GREATHAMMER.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_GREATAXE.get(), IceAndFireCompat.DRAGONBONE_GREATAXE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_CHAKRAM.get(), IceAndFireCompat.DRAGONBONE_CHAKRAM.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_SCYTHE.get(), IceAndFireCompat.DRAGONBONE_SCYTHE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_HALBERD.get(), IceAndFireCompat.DRAGONBONE_HALBERD.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_GREAT_KATANA.get(), IceAndFireCompat.DRAGONBONE_GREAT_KATANA.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_GRANDSWORD.get(), IceAndFireCompat.DRAGONBONE_GRANDSWORD.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_BACKHAND_BLADE.get(), IceAndFireCompat.DRAGONBONE_BACKHAND_BLADE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_LANCE.get(), IceAndFireCompat.DRAGONBONE_LANCE.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_KHOPESH.get(), IceAndFireCompat.DRAGONBONE_KHOPESH.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_DAGGER.get(), IceAndFireCompat.DRAGONBONE_DAGGER.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_PERNACH.get(), IceAndFireCompat.DRAGONBONE_PERNACH.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_QUARTERSTAFF.get(), IceAndFireCompat.DRAGONBONE_QUARTERSTAFF.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_GREAT_SPEAR.get(), IceAndFireCompat.DRAGONBONE_GREAT_SPEAR.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.FIRE_DRAGONBONE_DEER_HORNS.get(), IceAndFireCompat.DRAGONBONE_DEER_HORNS.get(), IafItemRegistry.FIRE_DRAGON_BLOOD.get(), "has_fire_dragon_blood");
+
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_LONGSWORD.get(), IceAndFireCompat.DRAGONBONE_LONGSWORD.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_TWINBLADE.get(), IceAndFireCompat.DRAGONBONE_TWINBLADE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_RAPIER.get(), IceAndFireCompat.DRAGONBONE_RAPIER.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_KATANA.get(), IceAndFireCompat.DRAGONBONE_KATANA.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_SAI.get(), IceAndFireCompat.DRAGONBONE_SAI.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_SPEAR.get(), IceAndFireCompat.DRAGONBONE_SPEAR.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_GLAIVE.get(), IceAndFireCompat.DRAGONBONE_GLAIVE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_WARGLAIVE.get(), IceAndFireCompat.DRAGONBONE_WARGLAIVE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_CUTLASS.get(), IceAndFireCompat.DRAGONBONE_CUTLASS.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_CLAYMORE.get(), IceAndFireCompat.DRAGONBONE_CLAYMORE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_GREATHAMMER.get(), IceAndFireCompat.DRAGONBONE_GREATHAMMER.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_GREATAXE.get(), IceAndFireCompat.DRAGONBONE_GREATAXE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_CHAKRAM.get(), IceAndFireCompat.DRAGONBONE_CHAKRAM.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_SCYTHE.get(), IceAndFireCompat.DRAGONBONE_SCYTHE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_HALBERD.get(), IceAndFireCompat.DRAGONBONE_HALBERD.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_GREAT_KATANA.get(), IceAndFireCompat.DRAGONBONE_GREAT_KATANA.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_GRANDSWORD.get(), IceAndFireCompat.DRAGONBONE_GRANDSWORD.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_BACKHAND_BLADE.get(), IceAndFireCompat.DRAGONBONE_BACKHAND_BLADE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_LANCE.get(), IceAndFireCompat.DRAGONBONE_LANCE.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_KHOPESH.get(), IceAndFireCompat.DRAGONBONE_KHOPESH.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_DAGGER.get(), IceAndFireCompat.DRAGONBONE_DAGGER.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_PERNACH.get(), IceAndFireCompat.DRAGONBONE_PERNACH.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_QUARTERSTAFF.get(), IceAndFireCompat.DRAGONBONE_QUARTERSTAFF.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_GREAT_SPEAR.get(), IceAndFireCompat.DRAGONBONE_GREAT_SPEAR.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.ICE_DRAGONBONE_DEER_HORNS.get(), IceAndFireCompat.DRAGONBONE_DEER_HORNS.get(), IafItemRegistry.ICE_DRAGON_BLOOD.get(), "has_ice_dragon_blood");
+
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_LONGSWORD.get(), IceAndFireCompat.DRAGONBONE_LONGSWORD.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_TWINBLADE.get(), IceAndFireCompat.DRAGONBONE_TWINBLADE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_RAPIER.get(), IceAndFireCompat.DRAGONBONE_RAPIER.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_KATANA.get(), IceAndFireCompat.DRAGONBONE_KATANA.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_SAI.get(), IceAndFireCompat.DRAGONBONE_SAI.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_SPEAR.get(), IceAndFireCompat.DRAGONBONE_SPEAR.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GLAIVE.get(), IceAndFireCompat.DRAGONBONE_GLAIVE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_WARGLAIVE.get(), IceAndFireCompat.DRAGONBONE_WARGLAIVE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_CUTLASS.get(), IceAndFireCompat.DRAGONBONE_CUTLASS.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_CLAYMORE.get(), IceAndFireCompat.DRAGONBONE_CLAYMORE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GREATHAMMER.get(), IceAndFireCompat.DRAGONBONE_GREATHAMMER.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GREATAXE.get(), IceAndFireCompat.DRAGONBONE_GREATAXE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_CHAKRAM.get(), IceAndFireCompat.DRAGONBONE_CHAKRAM.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_SCYTHE.get(), IceAndFireCompat.DRAGONBONE_SCYTHE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_HALBERD.get(), IceAndFireCompat.DRAGONBONE_HALBERD.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GREAT_KATANA.get(), IceAndFireCompat.DRAGONBONE_GREAT_KATANA.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GRANDSWORD.get(), IceAndFireCompat.DRAGONBONE_GRANDSWORD.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_BACKHAND_BLADE.get(), IceAndFireCompat.DRAGONBONE_BACKHAND_BLADE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_LANCE.get(), IceAndFireCompat.DRAGONBONE_LANCE.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_KHOPESH.get(), IceAndFireCompat.DRAGONBONE_KHOPESH.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_DAGGER.get(), IceAndFireCompat.DRAGONBONE_DAGGER.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_PERNACH.get(), IceAndFireCompat.DRAGONBONE_PERNACH.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_QUARTERSTAFF.get(), IceAndFireCompat.DRAGONBONE_QUARTERSTAFF.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GREAT_SPEAR.get(), IceAndFireCompat.DRAGONBONE_GREAT_SPEAR.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+        infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_DEER_HORNS.get(), IceAndFireCompat.DRAGONBONE_DEER_HORNS.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
     }
 
     private void longswordRecipe(Consumer<FinishedRecipe> consumer, ItemLike result, ItemLike ingot, ItemLike stick, String unlockCriterionName) {
@@ -481,6 +560,15 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("OXO")
                 .pattern(" O#")
                 .unlockedBy(unlockCriterionName, inventoryTrigger(ItemPredicate.Builder.item().of(ingot).build()))
+                .save(consumer);
+    }
+
+    private void infusedDragonboneRecipe(Consumer<FinishedRecipe> consumer, ItemLike result, ItemLike initialSword, ItemLike dragonBlood, String unlockCriterionName) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .define('#', initialSword)
+                .define('X', dragonBlood)
+                .pattern("X#")
+                .unlockedBy(unlockCriterionName, inventoryTrigger(ItemPredicate.Builder.item().of(dragonBlood).build()))
                 .save(consumer);
     }
 }

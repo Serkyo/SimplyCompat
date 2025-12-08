@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "simplycompat:dragonbone_great_spear"
+    },
+    "X": {
+      "item": "iceandfire:lightning_dragon_blood"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_great_spear_lightning"
+  },
+  "show_notification": true
+}

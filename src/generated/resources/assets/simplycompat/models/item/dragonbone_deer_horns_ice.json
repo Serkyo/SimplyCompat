@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "simplycompat:item/deer_horns/dragonbone_deer_horns_ice"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_longsword",
+  "textures": {
+    "layer0": "simplycompat:item/rapier/dragonbone_rapier_ice"
+  }
+}

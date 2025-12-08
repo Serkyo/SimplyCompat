@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/template_claymore",
+  "textures": {
+    "layer0": "simplycompat:item/grandsword/dragonbone_grandsword_fire"
+  }
+}

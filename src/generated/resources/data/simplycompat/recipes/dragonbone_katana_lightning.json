@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "simplycompat:dragonbone_katana"
+    },
+    "X": {
+      "item": "iceandfire:lightning_dragon_blood"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_katana_lightning"
+  },
+  "show_notification": true
+}

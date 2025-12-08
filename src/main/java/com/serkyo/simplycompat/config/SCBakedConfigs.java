@@ -16,6 +16,9 @@ public class SCBakedConfigs {
     public static int DRAGONBONE_DAMAGE_MODIFIER;
     public static int INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
     public static int INFUSED_DRAGONBONE_BONUS_DAMAGE;
+    public static int INFUSED_DRAGONBONE_KNOCKBACK;
+    public static int FIRE_INFUSED_DRAGONBONE_BURN_TIME;
+    public static int ICE_INFUSED_DRAGONBONE_FREEZE_TIME;
     public static int DRAGONSTEEL_DAMAGE_MODIFIER;
 
     public static void bakeCommon() {
@@ -32,6 +35,9 @@ public class SCBakedConfigs {
             DRAGONBONE_DAMAGE_MODIFIER = SCCommonConfigs.DRAGONBONE_DAMAGE_MODIFIER.get();
             INFUSED_DRAGONBONE_DAMAGE_MODIFIER = SCCommonConfigs.INFUSED_DRAGONBONE_DAMAGE_MODIFIER.get();
             INFUSED_DRAGONBONE_BONUS_DAMAGE = SCCommonConfigs.INFUSED_DRAGONBONE_BONUS_DAMAGE.get();
+            INFUSED_DRAGONBONE_KNOCKBACK = SCCommonConfigs.INFUSED_DRAGONBONE_KNOCKBACK.get();
+            FIRE_INFUSED_DRAGONBONE_BURN_TIME = SCCommonConfigs.FIRE_INFUSED_DRAGONBONE_BURN_TIME.get();
+            ICE_INFUSED_DRAGONBONE_FREEZE_TIME = SCCommonConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME.get();
             DRAGONSTEEL_DAMAGE_MODIFIER = SCCommonConfigs.DRAGONSTEEL_DAMAGE_MODIFIER.get();
         }
         catch (Exception e) {

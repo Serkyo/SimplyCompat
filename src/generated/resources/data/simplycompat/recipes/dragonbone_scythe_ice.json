@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "simplycompat:dragonbone_scythe"
+    },
+    "X": {
+      "item": "iceandfire:ice_dragon_blood"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonbone_scythe_ice"
+  },
+  "show_notification": true
+}

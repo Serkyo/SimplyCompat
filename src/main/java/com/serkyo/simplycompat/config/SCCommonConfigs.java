@@ -17,6 +17,9 @@ public class SCCommonConfigs {
     public static ForgeConfigSpec.ConfigValue<Integer> DRAGONBONE_DAMAGE_MODIFIER;
     public static ForgeConfigSpec.ConfigValue<Integer> INFUSED_DRAGONBONE_DAMAGE_MODIFIER;
     public static ForgeConfigSpec.ConfigValue<Integer> INFUSED_DRAGONBONE_BONUS_DAMAGE;
+    public static ForgeConfigSpec.ConfigValue<Integer> INFUSED_DRAGONBONE_KNOCKBACK;
+    public static ForgeConfigSpec.ConfigValue<Integer> FIRE_INFUSED_DRAGONBONE_BURN_TIME;
+    public static ForgeConfigSpec.ConfigValue<Integer> ICE_INFUSED_DRAGONBONE_FREEZE_TIME;
     public static ForgeConfigSpec.ConfigValue<Integer> DRAGONSTEEL_DAMAGE_MODIFIER;
 
     static {
@@ -44,6 +47,12 @@ public class SCCommonConfigs {
                 .define("infusedDragonBoneDamageModifier", 8);
         INFUSED_DRAGONBONE_BONUS_DAMAGE = BUILDER.comment("Additional damage caused by the infused dragon bone weapons against dragons of the opposing type. Halved for lightning dragons, as they affect both fire and ice")
                 .define("infusedDragonboneBonusDamage", 8);
+        INFUSED_DRAGONBONE_KNOCKBACK = BUILDER.comment("Knockback caused by the infused dragon bone weapons (in blocks)")
+                .define("infusedDragonboneKnockback", 1);
+        FIRE_INFUSED_DRAGONBONE_BURN_TIME = BUILDER.comment("Duration of the burning inflicted by the fire dragonbone sword (in seconds)")
+                .defineInRange("fireInfusedDragonboneBurnTime", 15, 1, Integer.MAX_VALUE);
+        ICE_INFUSED_DRAGONBONE_FREEZE_TIME = BUILDER.comment("Duration of the freeze effect inflicted by the ice dragonbone sword (in seconds)")
+                .defineInRange("iceInfusedDragonboneFreezeTime", 7, 1, Integer.MAX_VALUE);
         DRAGONSTEEL_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the dragonsteel weapons")
                 .define("dragonsteelDamageModifier", 3);
 
