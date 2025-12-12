@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.serkyo.simplycompat.config.SCBakedConfigs;
 import com.serkyo.simplycompat.config.SCCommonConfigs;
 import com.serkyo.simplycompat.core.SCCreativeTab;
+import com.serkyo.simplycompat.core.SCEffects;
 import com.serkyo.simplycompat.core.SCItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,7 @@ public class SimplyCompat
 
         SCItems.register(modEventBus);
         SCCreativeTab.register(modEventBus);
+        SCEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::onModConfigLoad);
