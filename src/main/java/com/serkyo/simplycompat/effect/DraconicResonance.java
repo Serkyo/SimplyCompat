@@ -2,8 +2,10 @@ package com.serkyo.simplycompat.effect;
 
 import com.serkyo.simplycompat.capability.ResonanceProvider;
 import com.serkyo.simplycompat.config.SCBakedConfigs;
+import com.serkyo.simplycompat.core.SCEffects;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -67,6 +69,22 @@ public class DraconicResonance extends MobEffect {
     @Override
     public boolean isDurationEffectTick(int pDuration, int pAmplifier) {
         return true;
+    }
+
+    public static void applyToEntity(LivingEntity target, String element) {
+        target.getCapability(ResonanceProvider.RESONANCE).ifPresent(resonance -> {
+            String currentElement = resonance.getElement();
+
+            if (!currentElement.equals(element)) {
+                resonance.setElement(element);
+            }
+        });
+        MobEffectInstance draconicResonance = target.getEffect(SCEffects.DRACONIC_RESONANCE.get());
+        int amplifier = 0;
+        if (draconicResonance != null) {
+            amplifier = Math.min(draconicResonance.getAmplifier() + 1, SCBakedConfigs.DRACONIC_RESONANCE_MAX_LEVEL - 1);
+        }
+        target.addEffect(new MobEffectInstance(SCEffects.DRACONIC_RESONANCE.get(), SCBakedConfigs.DRACONIC_RESONANCE_DURATION * 20, amplifier, false, true));
     }
 
     private void applyFireBonuses(LivingEntity livingEntity, int amplifier) {
