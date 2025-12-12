@@ -21,7 +21,7 @@ public interface MyrmexWeaponBehavior {
         }
         boolean isMyrmexVenomWeapon = tier == CustomTiers.MYRMEX_DESERT_VENOM || tier == CustomTiers.MYRMEX_JUNGLE_VENOM;
         if (isMyrmexVenomWeapon  && target.level().random.nextFloat() < SCBakedConfigs.MYRMEX_STINGER_POISON_CHANCE / 100F) {
-            target.addEffect(new MobEffectInstance(MobEffects.POISON, SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION * 40, SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL -1, false, true));
+            target.addEffect(new MobEffectInstance(MobEffects.POISON, SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION * 20, SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL -1, false, true));
         }
     }
 
