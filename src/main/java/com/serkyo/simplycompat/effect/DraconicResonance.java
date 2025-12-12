@@ -59,9 +59,9 @@ public class DraconicResonance extends MobEffect {
             String element = resonance.getElement();
 
             switch (element) {
-                case "fire" -> applyFireBonuses(pLivingEntity, pAmplifier);
-                case "ice" -> applyIceBonuses(pLivingEntity, pAmplifier);
-                case "lightning" -> applyLightningBonuses(pLivingEntity, pAmplifier);
+                case "fire" -> applyFireBonuses(pAmplifier);
+                case "ice" -> applyIceBonuses(pAmplifier);
+                case "lightning" -> applyLightningBonuses(pAmplifier);
             }
         });
     }
@@ -87,7 +87,7 @@ public class DraconicResonance extends MobEffect {
         target.addEffect(new MobEffectInstance(SCEffects.DRACONIC_RESONANCE.get(), SCBakedConfigs.DRACONIC_RESONANCE_DURATION * 20, amplifier, false, true));
     }
 
-    private void applyFireBonuses(LivingEntity livingEntity, int amplifier) {
+    private void applyFireBonuses(int amplifier) {
         this.addAttributeModifier(
                 Attributes.ATTACK_DAMAGE,
                 FIRE_ATTACK_DAMAGE_UUID.toString(),
@@ -96,7 +96,7 @@ public class DraconicResonance extends MobEffect {
         );
     }
 
-    private void applyIceBonuses(LivingEntity livingEntity, int amplifier) {
+    private void applyIceBonuses(int amplifier) {
         this.addAttributeModifier(
                 Attributes.ARMOR,
                 ICE_ARMOR_UUID.toString(),
@@ -111,7 +111,7 @@ public class DraconicResonance extends MobEffect {
         );
     }
 
-    private void applyLightningBonuses(LivingEntity livingEntity, int amplifier) {
+    private void applyLightningBonuses(int amplifier) {
         this.addAttributeModifier(
                 Attributes.MOVEMENT_SPEED,
                 LIGHTNING_MOVEMENT_SPEED_UUID.toString(),
