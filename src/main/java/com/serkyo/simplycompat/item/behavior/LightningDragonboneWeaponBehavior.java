@@ -25,7 +25,7 @@ public interface LightningDragonboneWeaponBehavior {
                 target.level().addFreshEntity(lightningboltentity);
             }
         }
-        target.knockback(1F, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        target.knockback(SCBakedConfigs.INFUSED_DRAGONBONE_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
     }
 
     default void applyLightningDragonboneTooltip(List<Component> pTooltipComponents) {

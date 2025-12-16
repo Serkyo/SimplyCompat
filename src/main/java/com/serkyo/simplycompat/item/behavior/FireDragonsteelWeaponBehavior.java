@@ -1,0 +1,30 @@
+package com.serkyo.simplycompat.item.behavior;
+
+import com.serkyo.simplycompat.config.SCBakedConfigs;
+import com.serkyo.simplycompat.effect.DraconicResonance;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.LivingEntity;
+
+import java.util.List;
+
+public interface FireDragonsteelWeaponBehavior {
+    default void applyFireDragonsteelDamage(LivingEntity target, LivingEntity attacker) {
+        if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
+            DraconicResonance.applyToEntity(attacker, "fire");
+        }
+        else {
+            target.setSecondsOnFire(SCBakedConfigs.FIRE_DRAGONSTEEL_BURN_TIME);
+            target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        }
+    }
+
+    default void applyFireDragonsteelTooltip(List<Component> pTooltipComponents) {
+        if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
+
+        }
+        else {
+            pTooltipComponents.add(Component.translatable("simplycompat.fire_dragonsteel_weapons.passive").withStyle(ChatFormatting.DARK_RED));
+        }
+    }
+}

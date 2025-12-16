@@ -12,8 +12,8 @@ import java.util.List;
 
 public interface IceDragonboneWeaponBehavior {
     default void applyIceDragonboneDamage(LivingEntity target, LivingEntity attacker) {
-        EntityDataProvider.getCapability(target).ifPresent((data) -> data.frozenData.setFrozen(target, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME));
-        target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME, 2));
+        EntityDataProvider.getCapability(target).ifPresent((data) -> data.frozenData.setFrozen(target, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME * 20));
+        target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME * 20, 2));
         target.knockback(SCBakedConfigs.INFUSED_DRAGONBONE_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
     }
 
