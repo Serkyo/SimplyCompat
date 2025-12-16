@@ -1,6 +1,8 @@
 package com.serkyo.simplycompat.utils;
 
+import com.github.alexthe666.iceandfire.IafConfig;
 import com.github.alexthe666.iceandfire.item.IafItemRegistry;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
@@ -17,7 +19,10 @@ public enum CustomTiers implements Tier {
     MYRMEX_JUNGLE(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get())),
     MYRMEX_JUNGLE_VENOM(3, 600, 6.0F, 1.0F, 8, () -> Ingredient.of(IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get())),
     DRAGONBONE(3, 1660, 10.0F, 4.0F, 22, () -> Ingredient.of(IafItemRegistry.DRAGON_BONE.get())),
-    INFUSED_DRAGONBONE(3, 2000, 10.0F, 5.5F, 22, () -> Ingredient.of(IafItemRegistry.DRAGON_BONE.get()));
+    INFUSED_DRAGONBONE(3, 2000, 10.0F, 5.5F, 22, () -> Ingredient.of(IafItemRegistry.DRAGON_BONE.get())),
+    FIRE_DRAGONSTEEL(4, 8000, 10.0F, 21.0F, 10, () -> Ingredient.of(IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get())),
+    ICE_DRAGONSTEEL(4, 8000, 10.0F, 21.0F, 10, () -> Ingredient.of(IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get())),
+    LIGHTNING_DRAGONSTEEL(4, 8000, 10.0F, 21.0F, 10, () -> Ingredient.of(IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get()));
 
     private final int level;
     private final int uses;
