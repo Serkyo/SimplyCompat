@@ -5,17 +5,24 @@ import com.serkyo.simplycompat.effect.DraconicResonance;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 
 import java.util.List;
 
 public interface FireDragonsteelWeaponBehavior {
     default void applyFireDragonsteelDamage(LivingEntity target, LivingEntity attacker) {
-        if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
-            DraconicResonance.applyToEntity(attacker, "fire");
+        boolean shouldApply = true;
+        if (attacker instanceof Player playerAttacker && playerAttacker.getAttackStrengthScale(0.5F) <= 0.9F) {
+            shouldApply = false;
         }
-        else {
-            target.setSecondsOnFire(SCBakedConfigs.FIRE_DRAGONSTEEL_BURN_TIME);
-            target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        if (shouldApply) {
+            if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
+                DraconicResonance.applyToEntity(attacker, "fire");
+            }
+            else {
+                target.setSecondsOnFire(SCBakedConfigs.FIRE_DRAGONSTEEL_BURN_TIME);
+                target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+            }
         }
     }
 

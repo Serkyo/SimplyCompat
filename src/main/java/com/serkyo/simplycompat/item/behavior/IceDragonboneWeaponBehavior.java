@@ -7,14 +7,21 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 
 import java.util.List;
 
 public interface IceDragonboneWeaponBehavior {
     default void applyIceDragonboneDamage(LivingEntity target, LivingEntity attacker) {
-        EntityDataProvider.getCapability(target).ifPresent((data) -> data.frozenData.setFrozen(target, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME * 20));
-        target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME * 20, 2));
-        target.knockback(SCBakedConfigs.INFUSED_DRAGONBONE_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        boolean shouldApply = true;
+        if (attacker instanceof Player playerAttacker && playerAttacker.getAttackStrengthScale(0.5F) <= 0.9F) {
+            shouldApply = false;
+        }
+        if (shouldApply) {
+            EntityDataProvider.getCapability(target).ifPresent((data) -> data.frozenData.setFrozen(target, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME * 20));
+            target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SCBakedConfigs.ICE_INFUSED_DRAGONBONE_FREEZE_TIME * 20, 2));
+            target.knockback(SCBakedConfigs.INFUSED_DRAGONBONE_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        }
     }
 
     default void applyIceDragonboneTooltip(List<Component> pTooltipComponents) {

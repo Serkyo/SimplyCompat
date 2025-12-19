@@ -10,18 +10,25 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Tier;
 
 import java.util.List;
 
 public interface MyrmexWeaponBehavior {
     default void applyMyrmexDamage(LivingEntity target, LivingEntity attacker, Tier tier) {
-        if (target.getMobType() != MobType.ARTHROPOD || target instanceof EntityDeathWorm) {
-            target.hurt(attacker.damageSources().generic(), SCBakedConfigs.MYRMEX_BONUS_DAMAGE);
+        boolean shouldApply = true;
+        if (attacker instanceof Player playerAttacker && playerAttacker.getAttackStrengthScale(0.5F) <= 0.9F) {
+            shouldApply = false;
         }
-        boolean isMyrmexVenomWeapon = tier == CustomTiers.MYRMEX_DESERT_VENOM || tier == CustomTiers.MYRMEX_JUNGLE_VENOM;
-        if (isMyrmexVenomWeapon  && target.level().random.nextFloat() < SCBakedConfigs.MYRMEX_STINGER_POISON_CHANCE / 100F) {
-            target.addEffect(new MobEffectInstance(MobEffects.POISON, SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION * 20, SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL -1, false, true));
+        if (shouldApply) {
+            if (target.getMobType() != MobType.ARTHROPOD || target instanceof EntityDeathWorm) {
+                target.hurt(attacker.damageSources().generic(), SCBakedConfigs.MYRMEX_BONUS_DAMAGE);
+            }
+            boolean isMyrmexVenomWeapon = tier == CustomTiers.MYRMEX_DESERT_VENOM || tier == CustomTiers.MYRMEX_JUNGLE_VENOM;
+            if (isMyrmexVenomWeapon  && target.level().random.nextFloat() < SCBakedConfigs.MYRMEX_STINGER_POISON_CHANCE / 100F) {
+                target.addEffect(new MobEffectInstance(MobEffects.POISON, SCBakedConfigs.MYRMEX_STINGER_POISON_DURATION * 20, SCBakedConfigs.MYRMEX_STINGER_POISON_LEVEL -1, false, true));
+            }
         }
     }
 

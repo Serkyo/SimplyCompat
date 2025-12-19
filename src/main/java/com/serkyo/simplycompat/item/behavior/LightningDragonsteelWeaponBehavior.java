@@ -14,23 +14,29 @@ import java.util.List;
 
 public interface LightningDragonsteelWeaponBehavior {
     default void applyLightningDragonsteelDamage(LivingEntity target, LivingEntity attacker) {
-        if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
-            DraconicResonance.applyToEntity(attacker, "lightning");
+        boolean shouldApply = true;
+        if (attacker instanceof Player playerAttacker && playerAttacker.getAttackStrengthScale(0.5F) <= 0.9F) {
+            shouldApply = false;
         }
-        else {
-            boolean flag = !(attacker instanceof Player) || !((double) attacker.attackAnim > 0.2);
-
-            if (!attacker.level().isClientSide && flag) {
-                LightningBolt lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.level());
-                lightningboltentity.getTags().add(ServerEvents.BOLT_DONT_DESTROY_LOOT);
-                lightningboltentity.getTags().add(attacker.getStringUUID());
-                lightningboltentity.moveTo(target.position());
-
-                if (!target.level().isClientSide) {
-                    target.level().addFreshEntity(lightningboltentity);
-                }
+        if (shouldApply) {
+            if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
+                DraconicResonance.applyToEntity(attacker, "lightning");
             }
-            target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+            else {
+                boolean flag = !(attacker instanceof Player) || !((double) attacker.attackAnim > 0.2);
+
+                if (!attacker.level().isClientSide && flag) {
+                    LightningBolt lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.level());
+                    lightningboltentity.getTags().add(ServerEvents.BOLT_DONT_DESTROY_LOOT);
+                    lightningboltentity.getTags().add(attacker.getStringUUID());
+                    lightningboltentity.moveTo(target.position());
+
+                    if (!target.level().isClientSide) {
+                        target.level().addFreshEntity(lightningboltentity);
+                    }
+                }
+                target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+            }
         }
     }
 

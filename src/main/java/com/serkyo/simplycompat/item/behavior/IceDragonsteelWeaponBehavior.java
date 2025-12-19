@@ -8,18 +8,25 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 
 import java.util.List;
 
 public interface IceDragonsteelWeaponBehavior {
     default void applyIceDragonsteelDamage(LivingEntity target, LivingEntity attacker) {
-        if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
-            DraconicResonance.applyToEntity(attacker, "ice");
+        boolean shouldApply = true;
+        if (attacker instanceof Player playerAttacker && playerAttacker.getAttackStrengthScale(0.5F) <= 0.9F) {
+            shouldApply = false;
         }
-        else {
-            EntityDataProvider.getCapability(target).ifPresent((data) -> data.frozenData.setFrozen(target, SCBakedConfigs.ICE_DRAGONSTEEL_FREEZE_TIME * 20));
-            target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SCBakedConfigs.ICE_DRAGONSTEEL_FREEZE_TIME * 20, 2));
-            target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        if (shouldApply) {
+            if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
+                DraconicResonance.applyToEntity(attacker, "ice");
+            }
+            else {
+                EntityDataProvider.getCapability(target).ifPresent((data) -> data.frozenData.setFrozen(target, SCBakedConfigs.ICE_DRAGONSTEEL_FREEZE_TIME * 20));
+                target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SCBakedConfigs.ICE_DRAGONSTEEL_FREEZE_TIME * 20, 2));
+                target.knockback(SCBakedConfigs.DRAGONSTEEL_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+            }
         }
     }
 

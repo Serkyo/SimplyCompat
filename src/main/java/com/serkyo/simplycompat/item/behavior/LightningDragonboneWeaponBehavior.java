@@ -13,19 +13,25 @@ import java.util.List;
 
 public interface LightningDragonboneWeaponBehavior {
     default void applyLightningDragonboneDamage(LivingEntity target, LivingEntity attacker) {
-        boolean flag = !(attacker instanceof Player) || !((double) attacker.attackAnim > 0.2);
-
-        if (!attacker.level().isClientSide && flag) {
-            LightningBolt lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.level());
-            lightningboltentity.getTags().add(ServerEvents.BOLT_DONT_DESTROY_LOOT);
-            lightningboltentity.getTags().add(attacker.getStringUUID());
-            lightningboltentity.moveTo(target.position());
-
-            if (!target.level().isClientSide) {
-                target.level().addFreshEntity(lightningboltentity);
-            }
+        boolean shouldApply = true;
+        if (attacker instanceof Player playerAttacker && playerAttacker.getAttackStrengthScale(0.5F) <= 0.9F) {
+            shouldApply = false;
         }
-        target.knockback(SCBakedConfigs.INFUSED_DRAGONBONE_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        if (shouldApply) {
+            boolean flag = !(attacker instanceof Player) || !((double) attacker.attackAnim > 0.2);
+
+            if (!attacker.level().isClientSide && flag) {
+                LightningBolt lightningboltentity = EntityType.LIGHTNING_BOLT.create(target.level());
+                lightningboltentity.getTags().add(ServerEvents.BOLT_DONT_DESTROY_LOOT);
+                lightningboltentity.getTags().add(attacker.getStringUUID());
+                lightningboltentity.moveTo(target.position());
+
+                if (!target.level().isClientSide) {
+                    target.level().addFreshEntity(lightningboltentity);
+                }
+            }
+            target.knockback(SCBakedConfigs.INFUSED_DRAGONBONE_KNOCKBACK, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
+        }
     }
 
     default void applyLightningDragonboneTooltip(List<Component> pTooltipComponents) {
