@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "simplycompat:item/cutlass/dragonsteel_cutlass_fire"
+  }
+}

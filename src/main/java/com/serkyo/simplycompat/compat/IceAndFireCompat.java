@@ -523,6 +523,159 @@ public class IceAndFireCompat extends Compat {
     public static final RegistryObject<Item> LIGHTNING_DRAGONBONE_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonbone_deer_horns_lightning",
             () -> new SCSMLightningDragonboneWeapon(WeaponType.DEER_HORNS));
 
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonsteel_longsword_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonsteel_twinblade_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_RAPIER = IAF_COMPAT_ITEMS.register("dragonsteel_rapier_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_KATANA = IAF_COMPAT_ITEMS.register("dragonsteel_katana_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_SAI = IAF_COMPAT_ITEMS.register("dragonsteel_sai_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_SPEAR = IAF_COMPAT_ITEMS.register("dragonsteel_spear_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_GLAIVE = IAF_COMPAT_ITEMS.register("dragonsteel_glaive_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonsteel_warglaive_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_CUTLASS = IAF_COMPAT_ITEMS.register("dragonsteel_cutlass_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonsteel_claymore_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonsteel_greathammer_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_GREATAXE = IAF_COMPAT_ITEMS.register("dragonsteel_greataxe_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonsteel_chakram_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_SCYTHE = IAF_COMPAT_ITEMS.register("dragonsteel_scythe_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_HALBERD = IAF_COMPAT_ITEMS.register("dragonsteel_halberd_fire",
+            () -> new SCSSFireDragonsteelWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonsteel_great_katana_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonsteel_grandsword_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonsteel_backhand_blade_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_LANCE = IAF_COMPAT_ITEMS.register("dragonsteel_lance_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.LANCE));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_KHOPESH = IAF_COMPAT_ITEMS.register("dragonsteel_khopesh_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.KHOPESH));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_DAGGER = IAF_COMPAT_ITEMS.register("dragonsteel_dagger_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.DAGGER));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_PERNACH = IAF_COMPAT_ITEMS.register("dragonsteel_pernach_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.PERNACH));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonsteel_quarterstaff_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonsteel_great_spear_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> FIRE_DRAGONSTEEL_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonsteel_deer_horns_fire",
+            () -> new SCSMFireDragonsteelWeapon(WeaponType.DEER_HORNS));
+
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonsteel_longsword_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonsteel_twinblade_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_RAPIER = IAF_COMPAT_ITEMS.register("dragonsteel_rapier_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_KATANA = IAF_COMPAT_ITEMS.register("dragonsteel_katana_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_SAI = IAF_COMPAT_ITEMS.register("dragonsteel_sai_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_SPEAR = IAF_COMPAT_ITEMS.register("dragonsteel_spear_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_GLAIVE = IAF_COMPAT_ITEMS.register("dragonsteel_glaive_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonsteel_warglaive_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_CUTLASS = IAF_COMPAT_ITEMS.register("dragonsteel_cutlass_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonsteel_claymore_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonsteel_greathammer_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_GREATAXE = IAF_COMPAT_ITEMS.register("dragonsteel_greataxe_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonsteel_chakram_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_SCYTHE = IAF_COMPAT_ITEMS.register("dragonsteel_scythe_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_HALBERD = IAF_COMPAT_ITEMS.register("dragonsteel_halberd_ice",
+            () -> new SCSSIceDragonsteelWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonsteel_great_katana_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonsteel_grandsword_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonsteel_backhand_blade_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_LANCE = IAF_COMPAT_ITEMS.register("dragonsteel_lance_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.LANCE));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_KHOPESH = IAF_COMPAT_ITEMS.register("dragonsteel_khopesh_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.KHOPESH));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_DAGGER = IAF_COMPAT_ITEMS.register("dragonsteel_dagger_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.DAGGER));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_PERNACH = IAF_COMPAT_ITEMS.register("dragonsteel_pernach_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.PERNACH));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonsteel_quarterstaff_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonsteel_great_spear_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> ICE_DRAGONSTEEL_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonsteel_deer_horns_ice",
+            () -> new SCSMIceDragonsteelWeapon(WeaponType.DEER_HORNS));
+
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_LONGSWORD = IAF_COMPAT_ITEMS.register("dragonsteel_longsword_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.LONGSWORD));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_TWINBLADE = IAF_COMPAT_ITEMS.register("dragonsteel_twinblade_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.TWINBLADE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_RAPIER = IAF_COMPAT_ITEMS.register("dragonsteel_rapier_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.RAPIER));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_KATANA = IAF_COMPAT_ITEMS.register("dragonsteel_katana_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.KATANA));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_SAI = IAF_COMPAT_ITEMS.register("dragonsteel_sai_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.SAI));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_SPEAR = IAF_COMPAT_ITEMS.register("dragonsteel_spear_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.SPEAR));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_GLAIVE = IAF_COMPAT_ITEMS.register("dragonsteel_glaive_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.GLAIVE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_WARGLAIVE = IAF_COMPAT_ITEMS.register("dragonsteel_warglaive_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.WARGLAIVE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_CUTLASS = IAF_COMPAT_ITEMS.register("dragonsteel_cutlass_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.CUTLASS));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_CLAYMORE = IAF_COMPAT_ITEMS.register("dragonsteel_claymore_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.CLAYMORE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_GREATHAMMER = IAF_COMPAT_ITEMS.register("dragonsteel_greathammer_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.GREATHAMMER));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_GREATAXE = IAF_COMPAT_ITEMS.register("dragonsteel_greataxe_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.GREATAXE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_CHAKRAM = IAF_COMPAT_ITEMS.register("dragonsteel_chakram_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.CHAKRAM));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_SCYTHE = IAF_COMPAT_ITEMS.register("dragonsteel_scythe_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.SCYTHE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_HALBERD = IAF_COMPAT_ITEMS.register("dragonsteel_halberd_lightning",
+            () -> new SCSSLightningDragonsteelWeapon(WeaponType.HALBERD));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_GREAT_KATANA = IAF_COMPAT_ITEMS.register("dragonsteel_great_katana_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.GREAT_KATANA));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_GRANDSWORD = IAF_COMPAT_ITEMS.register("dragonsteel_grandsword_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.GRANDSWORD));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_BACKHAND_BLADE = IAF_COMPAT_ITEMS.register("dragonsteel_backhand_blade_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.BACKHAND_BLADE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_LANCE = IAF_COMPAT_ITEMS.register("dragonsteel_lance_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.LANCE));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_KHOPESH = IAF_COMPAT_ITEMS.register("dragonsteel_khopesh_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.KHOPESH));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_DAGGER = IAF_COMPAT_ITEMS.register("dragonsteel_dagger_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.DAGGER));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_PERNACH = IAF_COMPAT_ITEMS.register("dragonsteel_pernach_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.PERNACH));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_QUARTERSTAFF = IAF_COMPAT_ITEMS.register("dragonsteel_quarterstaff_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.QUARTERSTAFF));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_GREAT_SPEAR = IAF_COMPAT_ITEMS.register("dragonsteel_great_spear_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.GREAT_SPEAR));
+    public static final RegistryObject<Item> LIGHTNING_DRAGONSTEEL_DEER_HORNS = IAF_COMPAT_ITEMS.register("dragonsteel_deer_horns_lightning",
+            () -> new SCSMLightningDragonsteelWeapon(WeaponType.DEER_HORNS));
+
     public static final IceAndFireCompat INSTANCE = new IceAndFireCompat();
 
     protected IceAndFireCompat() {

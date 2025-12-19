@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonsteel_lightning_ingot"
+    },
+    "O": {
+      "item": "iceandfire:wither_shard"
+    },
+    "X": {
+      "item": "iceandfire:witherbone"
+    }
+  },
+  "pattern": [
+    "  X",
+    " #X",
+    "O  "
+  ],
+  "result": {
+    "item": "simplycompat:dragonsteel_backhand_blade_lightning"
+  },
+  "show_notification": true
+}

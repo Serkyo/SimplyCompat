@@ -1,0 +1,6 @@
+{
+  "parent": "simplyswords:item/big_handheld",
+  "textures": {
+    "layer0": "simplycompat:item/spear/dragonsteel_spear_ice"
+  }
+}

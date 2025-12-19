@@ -6,7 +6,6 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -35,7 +34,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.COPPER_SCYTHE.get(), Items.COPPER_INGOT, Items.STICK, "has_copper_ingot");
         halberdRecipe(consumer, IceAndFireCompat.COPPER_HALBERD.get(), Items.COPPER_INGOT, Items.STICK, IafItemRegistry.COPPER_NUGGET.get(), "has_copper_ingot");
         greatKatanaRecipe(consumer, IceAndFireCompat.COPPER_GREAT_KATANA.get(), Items.COPPER_INGOT, Items.STICK, IafItemRegistry.COPPER_NUGGET.get(), "has_copper_ingot");
-        grandswordRecipe(consumer, IceAndFireCompat.COPPER_GRANDSWORD.get(), Items.COPPER_INGOT, Items.STICK, IafItemRegistry.COPPER_NUGGET.get(), IafItemRegistry.COPPER_SWORD.get(), "has_copper_ingot");
+        grandswordRecipe(consumer, IceAndFireCompat.COPPER_GRANDSWORD.get(), Items.COPPER_INGOT, IafItemRegistry.COPPER_NUGGET.get(), IafItemRegistry.COPPER_SWORD.get(), "has_copper_ingot");
         backhandBladeRecipe(consumer, IceAndFireCompat.COPPER_BACKHAND_BLADE.get(), Items.COPPER_INGOT, Items.STICK, IafItemRegistry.COPPER_NUGGET.get(), "has_copper_ingot");
         lanceRecipe(consumer, IceAndFireCompat.COPPER_LANCE.get(), Items.COPPER_INGOT, Items.STICK, IafItemRegistry.COPPER_NUGGET.get(), "has_copper_ingot");
         khopeshRecipe(consumer, IceAndFireCompat.COPPER_KHOPESH.get(), Items.COPPER_INGOT, Items.STICK, IafItemRegistry.COPPER_NUGGET.get(), "has_copper_ingot");
@@ -61,7 +60,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.SILVER_SCYTHE.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, "has_silver_ingot");
         halberdRecipe(consumer, IceAndFireCompat.SILVER_HALBERD.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, IafItemRegistry.SILVER_NUGGET.get(), "has_silver_ingot");
         greatKatanaRecipe(consumer, IceAndFireCompat.SILVER_GREAT_KATANA.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, IafItemRegistry.SILVER_NUGGET.get(), "has_silver_ingot");
-        grandswordRecipe(consumer, IceAndFireCompat.SILVER_GRANDSWORD.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, IafItemRegistry.SILVER_NUGGET.get(), IafItemRegistry.SILVER_SWORD.get(), "has_silver_ingot");
+        grandswordRecipe(consumer, IceAndFireCompat.SILVER_GRANDSWORD.get(), IafItemRegistry.SILVER_INGOT.get(), IafItemRegistry.SILVER_NUGGET.get(), IafItemRegistry.SILVER_SWORD.get(), "has_silver_ingot");
         backhandBladeRecipe(consumer, IceAndFireCompat.SILVER_BACKHAND_BLADE.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, IafItemRegistry.SILVER_NUGGET.get(), "has_silver_ingot");
         lanceRecipe(consumer, IceAndFireCompat.SILVER_LANCE.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, IafItemRegistry.SILVER_NUGGET.get(), "has_silver_ingot");
         khopeshRecipe(consumer, IceAndFireCompat.SILVER_KHOPESH.get(), IafItemRegistry.SILVER_INGOT.get(), Items.STICK, IafItemRegistry.SILVER_NUGGET.get(), "has_silver_ingot");
@@ -87,7 +86,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_SCYTHE.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), "has_desert_chitin");
         halberdRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_HALBERD.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
         greatKatanaRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_GREAT_KATANA.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
-        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_GRANDSWORD.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), IafItemRegistry.MYRMEX_DESERT_SWORD.get(), "has_desert_chitin");
+        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_GRANDSWORD.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), IafItemRegistry.MYRMEX_DESERT_SWORD.get(), "has_desert_chitin");
         backhandBladeRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_BACKHAND_BLADE.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
         lanceRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_LANCE.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
         khopeshRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_KHOPESH.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
@@ -113,7 +112,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_SCYTHE_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), "has_desert_chitin");
         halberdRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_HALBERD_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
         greatKatanaRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_GREAT_KATANA_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
-        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_GRANDSWORD_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), IafItemRegistry.MYRMEX_DESERT_SWORD_VENOM.get(), "has_desert_chitin");
+        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_GRANDSWORD_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), IafItemRegistry.MYRMEX_DESERT_SWORD_VENOM.get(), "has_desert_chitin");
         backhandBladeRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_BACKHAND_BLADE_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
         lanceRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_LANCE_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
         khopeshRecipe(consumer, IceAndFireCompat.MYRMEX_DESERT_KHOPESH_VENOM.get(), IafItemRegistry.MYRMEX_DESERT_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_DESERT_RESIN.get(), "has_desert_chitin");
@@ -139,7 +138,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_SCYTHE.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), "has_jungle_chitin");
         halberdRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_HALBERD.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
         greatKatanaRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_GREAT_KATANA.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
-        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_GRANDSWORD.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), IafItemRegistry.MYRMEX_JUNGLE_SWORD.get(), "has_jungle_chitin");
+        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_GRANDSWORD.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), IafItemRegistry.MYRMEX_JUNGLE_SWORD.get(), "has_jungle_chitin");
         backhandBladeRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_BACKHAND_BLADE.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
         lanceRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_LANCE.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
         khopeshRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_KHOPESH.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
@@ -165,7 +164,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_SCYTHE_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), "has_jungle_chitin");
         halberdRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_HALBERD_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
         greatKatanaRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_GREAT_KATANA_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
-        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_GRANDSWORD_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), IafItemRegistry.MYRMEX_JUNGLE_SWORD_VENOM.get(), "has_jungle_chitin");
+        grandswordRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_GRANDSWORD_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), IafItemRegistry.MYRMEX_JUNGLE_SWORD_VENOM.get(), "has_jungle_chitin");
         backhandBladeRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_BACKHAND_BLADE_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
         lanceRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_LANCE_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
         khopeshRecipe(consumer, IceAndFireCompat.MYRMEX_JUNGLE_KHOPESH_VENOM.get(), IafItemRegistry.MYRMEX_JUNGLE_CHITIN.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.MYRMEX_JUNGLE_RESIN.get(), "has_jungle_chitin");
@@ -191,7 +190,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         scytheRecipe(consumer, IceAndFireCompat.DRAGONBONE_SCYTHE.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonbone");
         halberdRecipe(consumer, IceAndFireCompat.DRAGONBONE_HALBERD.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonbone");
         greatKatanaRecipe(consumer, IceAndFireCompat.DRAGONBONE_GREAT_KATANA.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonbone");
-        grandswordRecipe(consumer, IceAndFireCompat.DRAGONBONE_GRANDSWORD.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), IafItemRegistry.DRAGONBONE_SWORD.get(), "has_dragonbone");
+        grandswordRecipe(consumer, IceAndFireCompat.DRAGONBONE_GRANDSWORD.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHER_SHARD.get(), IafItemRegistry.DRAGONBONE_SWORD.get(), "has_dragonbone");
         backhandBladeRecipe(consumer, IceAndFireCompat.DRAGONBONE_BACKHAND_BLADE.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonbone");
         lanceRecipe(consumer, IceAndFireCompat.DRAGONBONE_LANCE.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonbone");
         khopeshRecipe(consumer, IceAndFireCompat.DRAGONBONE_KHOPESH.get(), IafItemRegistry.DRAGON_BONE.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonbone");
@@ -278,6 +277,84 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
         infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_QUARTERSTAFF.get(), IceAndFireCompat.DRAGONBONE_QUARTERSTAFF.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
         infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_GREAT_SPEAR.get(), IceAndFireCompat.DRAGONBONE_GREAT_SPEAR.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
         infusedDragonboneRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONBONE_DEER_HORNS.get(), IceAndFireCompat.DRAGONBONE_DEER_HORNS.get(), IafItemRegistry.LIGHTNING_DRAGON_BLOOD.get(), "has_lightning_dragon_blood");
+
+        longswordRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_LONGSWORD.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        twinbladeRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_TWINBLADE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        rapierRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_RAPIER.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        katanaRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_KATANA.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        saiRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_SAI.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        spearRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_SPEAR.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        glaiveRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_GLAIVE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        warglaiveRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_WARGLAIVE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        cutlassRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_CUTLASS.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        claymoreRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_CLAYMORE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        greathammerRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_GREATHAMMER.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        greataxeRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_GREATAXE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        chakramRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_CHAKRAM.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        scytheRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_SCYTHE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        halberdRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_HALBERD.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        greatKatanaRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_GREAT_KATANA.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        grandswordRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_GRANDSWORD.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHER_SHARD.get(), IafItemRegistry.DRAGONSTEEL_FIRE_SWORD.get(), "has_dragonsteel_fire_ingot");
+        backhandBladeRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_BACKHAND_BLADE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        lanceRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_LANCE.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        khopeshRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_KHOPESH.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        daggerRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_DAGGER.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        pernachRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_PERNACH.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+        quarterstaffRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_QUARTERSTAFF.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        greatSpearRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_GREAT_SPEAR.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_fire_ingot");
+        deerHornsRecipe(consumer, IceAndFireCompat.FIRE_DRAGONSTEEL_DEER_HORNS.get(), IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_fire_ingot");
+
+        longswordRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_LONGSWORD.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        twinbladeRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_TWINBLADE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        rapierRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_RAPIER.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        katanaRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_KATANA.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        saiRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_SAI.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        spearRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_SPEAR.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        glaiveRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_GLAIVE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        warglaiveRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_WARGLAIVE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        cutlassRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_CUTLASS.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        claymoreRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_CLAYMORE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        greathammerRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_GREATHAMMER.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        greataxeRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_GREATAXE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        chakramRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_CHAKRAM.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        scytheRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_SCYTHE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        halberdRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_HALBERD.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        greatKatanaRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_GREAT_KATANA.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        grandswordRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_GRANDSWORD.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHER_SHARD.get(), IafItemRegistry.DRAGONSTEEL_ICE_SWORD.get(), "has_dragonsteel_ice_ingot");
+        backhandBladeRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_BACKHAND_BLADE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        lanceRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_LANCE.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        khopeshRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_KHOPESH.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        daggerRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_DAGGER.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        pernachRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_PERNACH.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+        quarterstaffRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_QUARTERSTAFF.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        greatSpearRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_GREAT_SPEAR.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_ice_ingot");
+        deerHornsRecipe(consumer, IceAndFireCompat.ICE_DRAGONSTEEL_DEER_HORNS.get(), IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_ice_ingot");
+
+        longswordRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_LONGSWORD.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        twinbladeRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_TWINBLADE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        rapierRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_RAPIER.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        katanaRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_KATANA.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        saiRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_SAI.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        spearRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_SPEAR.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        glaiveRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_GLAIVE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        warglaiveRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_WARGLAIVE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        cutlassRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_CUTLASS.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        claymoreRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_CLAYMORE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        greathammerRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_GREATHAMMER.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        greataxeRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_GREATAXE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        chakramRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_CHAKRAM.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        scytheRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_SCYTHE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        halberdRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_HALBERD.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        greatKatanaRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_GREAT_KATANA.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        grandswordRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_GRANDSWORD.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHER_SHARD.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_SWORD.get(), "has_dragonsteel_lightning_ingot");
+        backhandBladeRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_BACKHAND_BLADE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        lanceRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_LANCE.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        khopeshRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_KHOPESH.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        daggerRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_DAGGER.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        pernachRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_PERNACH.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
+        quarterstaffRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_QUARTERSTAFF.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        greatSpearRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_GREAT_SPEAR.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), "has_dragonsteel_lightning_ingot");
+        deerHornsRecipe(consumer, IceAndFireCompat.LIGHTNING_DRAGONSTEEL_DEER_HORNS.get(), IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get(), IafItemRegistry.WITHERBONE.get(), IafItemRegistry.WITHER_SHARD.get(), "has_dragonsteel_lightning_ingot");
     }
 
     private void longswordRecipe(Consumer<FinishedRecipe> consumer, ItemLike result, ItemLike ingot, ItemLike stick, String unlockCriterionName) {
@@ -459,7 +536,7 @@ public class SCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(consumer);
     }
 
-    private void grandswordRecipe(Consumer<FinishedRecipe> consumer, ItemLike result, ItemLike ingot, ItemLike stick, ItemLike nugget, ItemLike sword, String unlockCriterionName) {
+    private void grandswordRecipe(Consumer<FinishedRecipe> consumer, ItemLike result, ItemLike ingot, ItemLike nugget, ItemLike sword, String unlockCriterionName) {
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
                 .define('#', ingot)
                 .define('O', nugget)

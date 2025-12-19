@@ -68,6 +68,9 @@ public class SCServerEvent {
                     else if (weapontier == CustomTiers.INFUSED_DRAGONBONE) {
                         newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.INFUSED_DRAGONBONE_DAMAGE_MODIFIER, weaponType);
                     }
+                    else if (weapontier == CustomTiers.FIRE_DRAGONSTEEL || weapontier == CustomTiers.ICE_DRAGONSTEEL || weapontier == CustomTiers.LIGHTNING_DRAGONSTEEL) {
+                        newDamage = WeaponRegistrationUtils.getSimplyWeaponDamage(SCBakedConfigs.DRAGONSTEEL_DAMAGE_MODIFIER, weaponType);
+                    }
                     event.addModifier(Attributes.ATTACK_DAMAGE, new AttributeModifier(baseAttackDamageUUID,  SimplyCompat.MOD_ID + ":override", newDamage, AttributeModifier.Operation.ADDITION));
                 }
             }

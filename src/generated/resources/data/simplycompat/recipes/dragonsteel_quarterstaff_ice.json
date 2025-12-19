@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonsteel_ice_ingot"
+    },
+    "X": {
+      "item": "iceandfire:witherbone"
+    }
+  },
+  "pattern": [
+    "#",
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonsteel_quarterstaff_ice"
+  },
+  "show_notification": true
+}

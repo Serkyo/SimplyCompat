@@ -71,7 +71,7 @@ public class SCCommonConfigs {
         ICE_INFUSED_DRAGONBONE_FREEZE_TIME = BUILDER.comment("Duration of the freeze effect inflicted by the ice dragonbone weapons (in seconds)")
                 .defineInRange("iceInfusedDragonboneFreezeTime", 7, 1, Integer.MAX_VALUE);
         DRAGONSTEEL_DAMAGE_MODIFIER = BUILDER.comment("Damage modifier of the dragonsteel weapons")
-                .define("dragonsteelDamageModifier", 3);
+                .define("dragonsteelDamageModifier", 24);
         DRAGONSTEEL_REWORK = BUILDER.comment("Should the dragonsteel be reworked ? The non rework version will fall back to the same effects as base Ice and Fire")
                 .define("doDragonsteelRework", true);
         BUILDER.push("Dragonsteel-Rework");

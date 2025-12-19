@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonsteel_lightning_ingot"
+    },
+    "X": {
+      "item": "iceandfire:witherbone"
+    }
+  },
+  "pattern": [
+    "X  ",
+    " # ",
+    "  #"
+  ],
+  "result": {
+    "item": "simplycompat:dragonsteel_longsword_lightning"
+  },
+  "show_notification": true
+}

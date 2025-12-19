@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "iceandfire:dragonsteel_lightning_ingot"
+    },
+    "O": {
+      "item": "iceandfire:wither_shard"
+    },
+    "S": {
+      "item": "iceandfire:dragonsteel_lightning_sword"
+    }
+  },
+  "pattern": [
+    "O#O",
+    "###",
+    "#S#"
+  ],
+  "result": {
+    "item": "simplycompat:dragonsteel_grandsword_lightning"
+  },
+  "show_notification": true
+}
