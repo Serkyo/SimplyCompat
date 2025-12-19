@@ -1,6 +1,7 @@
 package com.serkyo.simplycompat.config;
 
 import com.serkyo.simplycompat.SimplyCompat;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 
 import java.util.Arrays;
 
@@ -23,16 +24,16 @@ public class SCBakedConfigs {
     public static boolean DRAGONSTEEL_REWORK;
     public static int DRACONIC_RESONANCE_DURATION;
     public static int DRACONIC_RESONANCE_MAX_LEVEL;
-    public static float DRACONIC_RESONANCE_ATTACK_BONUS;
-    public static String DRACONIC_RESONANCE_ATTACK_OPERATION;
-    public static float DRACONIC_RESONANCE_ARMOR_BONUS;
-    public static String DRACONIC_RESONANCE_ARMOR_OPERATION;
-    public static float DRACONIC_RESONANCE_ARMOR_TOUGHNESS_BONUS;
-    public static String DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION;
-    public static float DRACONIC_RESONANCE_SPEED_BONUS;
-    public static String DRACONIC_RESONANCE_SPEED_OPERATION;
-    public static float DRACONIC_RESONANCE_ATTACK_SPEED_BONUS;
-    public static String DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION;
+    public static double DRACONIC_RESONANCE_ATTACK_BONUS;
+    public static AttributeModifier.Operation DRACONIC_RESONANCE_ATTACK_OPERATION;
+    public static double DRACONIC_RESONANCE_ARMOR_BONUS;
+    public static AttributeModifier.Operation DRACONIC_RESONANCE_ARMOR_OPERATION;
+    public static double DRACONIC_RESONANCE_ARMOR_TOUGHNESS_BONUS;
+    public static AttributeModifier.Operation DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION;
+    public static double DRACONIC_RESONANCE_SPEED_BONUS;
+    public static AttributeModifier.Operation DRACONIC_RESONANCE_SPEED_OPERATION;
+    public static double DRACONIC_RESONANCE_ATTACK_SPEED_BONUS;
+    public static AttributeModifier.Operation DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION;
     public static int DRAGONSTEEL_KNOCKBACK;
     public static int FIRE_DRAGONSTEEL_BURN_TIME;
     public static int ICE_DRAGONSTEEL_FREEZE_TIME;

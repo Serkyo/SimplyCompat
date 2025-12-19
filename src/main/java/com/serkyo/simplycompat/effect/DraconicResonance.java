@@ -58,10 +58,12 @@ public class DraconicResonance extends MobEffect {
         pLivingEntity.getCapability(ResonanceProvider.RESONANCE).ifPresent(resonance -> {
             String element = resonance.getElement();
 
-            switch (element) {
-                case "fire" -> applyFireBonuses(pAmplifier);
-                case "ice" -> applyIceBonuses(pAmplifier);
-                case "lightning" -> applyLightningBonuses(pAmplifier);
+            if (element != null) {
+                switch (element) {
+                    case "fire" -> applyFireBonuses(pAmplifier);
+                    case "ice" -> applyIceBonuses(pAmplifier);
+                    case "lightning" -> applyLightningBonuses(pAmplifier);
+                }
             }
         });
     }
@@ -75,7 +77,7 @@ public class DraconicResonance extends MobEffect {
         target.getCapability(ResonanceProvider.RESONANCE).ifPresent(resonance -> {
             String currentElement = resonance.getElement();
 
-            if (!currentElement.equals(element)) {
+            if (currentElement == null || !currentElement.equals(element)) {
                 resonance.setElement(element);
             }
         });
@@ -92,7 +94,7 @@ public class DraconicResonance extends MobEffect {
                 Attributes.ATTACK_DAMAGE,
                 FIRE_ATTACK_DAMAGE_UUID.toString(),
                 SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_BONUS * (amplifier + 1),
-                getOperationFromString(SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_OPERATION)
+                SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_OPERATION
         );
     }
 
@@ -101,13 +103,13 @@ public class DraconicResonance extends MobEffect {
                 Attributes.ARMOR,
                 ICE_ARMOR_UUID.toString(),
                 SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_BONUS * (amplifier + 1),
-                getOperationFromString(SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_OPERATION)
+                SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_OPERATION
         );
         this.addAttributeModifier(
                 Attributes.ARMOR_TOUGHNESS,
                 ICE_ARMOR_TOUGHNESS_UUID.toString(),
                 SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_BONUS * (amplifier + 1),
-                getOperationFromString(SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION)
+                SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION
         );
     }
 
@@ -116,25 +118,13 @@ public class DraconicResonance extends MobEffect {
                 Attributes.MOVEMENT_SPEED,
                 LIGHTNING_MOVEMENT_SPEED_UUID.toString(),
                 SCBakedConfigs.DRACONIC_RESONANCE_SPEED_BONUS * (amplifier + 1),
-                getOperationFromString(SCBakedConfigs.DRACONIC_RESONANCE_SPEED_OPERATION)
+                SCBakedConfigs.DRACONIC_RESONANCE_SPEED_OPERATION
         );
         this.addAttributeModifier(
                 Attributes.ATTACK_SPEED,
                 LIGHTNING_ATTACK_SPEED_UUID.toString(),
                 SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_BONUS * (amplifier + 1),
-                getOperationFromString(SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION)
+                SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION
         );
-    }
-
-    private AttributeModifier.Operation getOperationFromString(String string) {
-        if (string.equals("ADDITION")) {
-            return AttributeModifier.Operation.ADDITION;
-        }
-        else if (string.equals("MULTIPLY_BASE")) {
-            return AttributeModifier.Operation.MULTIPLY_BASE;
-        }
-        else {
-            return AttributeModifier.Operation.MULTIPLY_TOTAL;
-        }
     }
 }
