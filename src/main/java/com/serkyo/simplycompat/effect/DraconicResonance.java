@@ -96,9 +96,39 @@ public class DraconicResonance extends MobEffect {
                 SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_BONUS * (amplifier + 1),
                 SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_OPERATION
         );
+        this.addAttributeModifier(
+                Attributes.ARMOR,
+                ICE_ARMOR_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_OPERATION
+        );
+        this.addAttributeModifier(
+                Attributes.ARMOR_TOUGHNESS,
+                ICE_ARMOR_TOUGHNESS_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION
+        );
+        this.addAttributeModifier(
+                Attributes.MOVEMENT_SPEED,
+                LIGHTNING_MOVEMENT_SPEED_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_SPEED_OPERATION
+        );
+        this.addAttributeModifier(
+                Attributes.ATTACK_SPEED,
+                LIGHTNING_ATTACK_SPEED_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION
+        );
     }
 
     private void applyIceBonuses(int amplifier) {
+        this.addAttributeModifier(
+                Attributes.ATTACK_DAMAGE,
+                FIRE_ATTACK_DAMAGE_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_OPERATION
+        );
         this.addAttributeModifier(
                 Attributes.ARMOR,
                 ICE_ARMOR_UUID.toString(),
@@ -111,9 +141,39 @@ public class DraconicResonance extends MobEffect {
                 SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_BONUS * (amplifier + 1),
                 SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION
         );
+        this.addAttributeModifier(
+                Attributes.MOVEMENT_SPEED,
+                LIGHTNING_MOVEMENT_SPEED_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_SPEED_OPERATION
+        );
+        this.addAttributeModifier(
+                Attributes.ATTACK_SPEED,
+                LIGHTNING_ATTACK_SPEED_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION
+        );
     }
 
     private void applyLightningBonuses(int amplifier) {
+        this.addAttributeModifier(
+                Attributes.ATTACK_DAMAGE,
+                FIRE_ATTACK_DAMAGE_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ATTACK_OPERATION
+        );
+        this.addAttributeModifier(
+                Attributes.ARMOR,
+                ICE_ARMOR_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_OPERATION
+        );
+        this.addAttributeModifier(
+                Attributes.ARMOR_TOUGHNESS,
+                ICE_ARMOR_TOUGHNESS_UUID.toString(),
+                0,
+                SCBakedConfigs.DRACONIC_RESONANCE_ARMOR_TOUGHNESS_OPERATION
+        );
         this.addAttributeModifier(
                 Attributes.MOVEMENT_SPEED,
                 LIGHTNING_MOVEMENT_SPEED_UUID.toString(),
