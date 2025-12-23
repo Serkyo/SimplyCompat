@@ -3,8 +3,6 @@ package com.serkyo.simplycompat.config;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraftforge.common.ForgeConfigSpec;
 
-import java.util.List;
-
 public class SCCommonConfigs {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
@@ -37,6 +35,10 @@ public class SCCommonConfigs {
     public static ForgeConfigSpec.EnumValue<AttributeModifier.Operation> DRACONIC_RESONANCE_SPEED_OPERATION;
     public static ForgeConfigSpec.DoubleValue DRACONIC_RESONANCE_ATTACK_SPEED_BONUS;
     public static ForgeConfigSpec.EnumValue<AttributeModifier.Operation> DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION;
+    public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_RANGE;
+    public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_DURATION;
+    public static ForgeConfigSpec.DoubleValue FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER;
+    public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED;
     public static ForgeConfigSpec.IntValue DRAGONSTEEL_KNOCKBACK;
     public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_BURN_TIME;
     public static ForgeConfigSpec.IntValue ICE_DRAGONSTEEL_FREEZE_TIME;
@@ -100,6 +102,14 @@ public class SCCommonConfigs {
                 .defineInRange("draconicResonanceAttackSpeedBonus", 0.1, 0.0, Double.MAX_VALUE);
         DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION = BUILDER.comment("Operation used to apply the attack speed to the player")
                 .defineEnum("draconicResonanceAttackSpeedOperation", AttributeModifier.Operation.MULTIPLY_TOTAL);
+        FIRE_DRAGONSTEEL_ABILITY_RANGE = BUILDER.comment("Range of the fire dragonsteel weapon ability")
+                .defineInRange("fireDragonsteelAbilityRange", 5, 1, Integer.MAX_VALUE);
+        FIRE_DRAGONSTEEL_ABILITY_DURATION = BUILDER.comment("Duration of the fire dragonsteel weapon ability (in seconds)")
+                .defineInRange("fireDragonsteelAbilityDuration", 10, 1, Integer.MAX_VALUE);
+        FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER = BUILDER.comment("Damage multiplier of the fire dragonsteel weapon ability, scaling from the weapon's base damage")
+                .defineInRange("fireDragonsteelAbilityDamageMultiplier", 0.5, 0, Double.MAX_VALUE);
+        FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED = BUILDER.comment("Level of the effect applied to the targets hit by the fire dragonsteel weapon ability")
+                .defineInRange("fireDragonsteelAbilityLevelApplied", 1, 1, 256);
         BUILDER.pop();
         BUILDER.push("Dragonsteel-Base-Effect");
         DRAGONSTEEL_KNOCKBACK = BUILDER.comment("Knockback caused by the dragonsteel weapons (in blocks)")

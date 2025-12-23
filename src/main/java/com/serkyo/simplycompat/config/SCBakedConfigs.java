@@ -2,6 +2,7 @@ package com.serkyo.simplycompat.config;
 
 import com.serkyo.simplycompat.SimplyCompat;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.Arrays;
 
@@ -34,6 +35,10 @@ public class SCBakedConfigs {
     public static AttributeModifier.Operation DRACONIC_RESONANCE_SPEED_OPERATION;
     public static double DRACONIC_RESONANCE_ATTACK_SPEED_BONUS;
     public static AttributeModifier.Operation DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION;
+    public static int FIRE_DRAGONSTEEL_ABILITY_RANGE;
+    public static int FIRE_DRAGONSTEEL_ABILITY_DURATION;
+    public static double FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER;
+    public static int FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED;
     public static int DRAGONSTEEL_KNOCKBACK;
     public static int FIRE_DRAGONSTEEL_BURN_TIME;
     public static int ICE_DRAGONSTEEL_FREEZE_TIME;
@@ -70,10 +75,13 @@ public class SCBakedConfigs {
             DRACONIC_RESONANCE_SPEED_OPERATION = SCCommonConfigs.DRACONIC_RESONANCE_SPEED_OPERATION.get();
             DRACONIC_RESONANCE_ATTACK_SPEED_BONUS = SCCommonConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_BONUS.get();
             DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION = SCCommonConfigs.DRACONIC_RESONANCE_ATTACK_SPEED_OPERATION.get();
+            FIRE_DRAGONSTEEL_ABILITY_RANGE = SCCommonConfigs.FIRE_DRAGONSTEEL_ABILITY_RANGE.get();
+            FIRE_DRAGONSTEEL_ABILITY_DURATION = SCCommonConfigs.FIRE_DRAGONSTEEL_ABILITY_DURATION.get();
+            FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER = SCCommonConfigs.FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER.get();
+            FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED = SCCommonConfigs.FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED.get();
             DRAGONSTEEL_KNOCKBACK = SCCommonConfigs.DRAGONSTEEL_KNOCKBACK.get();
             FIRE_DRAGONSTEEL_BURN_TIME = SCCommonConfigs.FIRE_DRAGONSTEEL_BURN_TIME.get();
             ICE_DRAGONSTEEL_FREEZE_TIME = SCCommonConfigs.ICE_DRAGONSTEEL_FREEZE_TIME.get();
-
         }
         catch (Exception e) {
             SimplyCompat.LOGGER.error("An exception has occured while trying to load the common config for Simply Compat");

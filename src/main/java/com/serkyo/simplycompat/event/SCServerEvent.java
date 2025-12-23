@@ -2,18 +2,22 @@ package com.serkyo.simplycompat.event;
 
 import com.serkyo.simplycompat.SimplyCompat;
 import com.serkyo.simplycompat.config.SCBakedConfigs;
+import com.serkyo.simplycompat.effect.ScorchingHeat;
 import com.serkyo.simplycompat.item.SCSimplyMore;
 import com.serkyo.simplycompat.item.SCSimplySword;
 import com.serkyo.simplycompat.utils.CustomTiers;
 import com.serkyo.simplycompat.utils.WeaponRegistrationUtils;
 import com.serkyo.simplycompat.utils.WeaponType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
+import net.minecraftforge.event.entity.living.MobEffectEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -77,4 +81,13 @@ public class SCServerEvent {
         }
     }
 
+    @SubscribeEvent
+    public static void clearPersistentData(MobEffectEvent.Remove event) {
+        MobEffect effect = event.getEffect();
+        LivingEntity entity = event.getEntity();
+        if (effect instanceof ScorchingHeat) {
+            entity.getPersistentData().remove("ScorchingHeatOwner");
+            entity.getPersistentData().remove("ScorchingHeatOwnerAttack");
+        }
+    }
 }

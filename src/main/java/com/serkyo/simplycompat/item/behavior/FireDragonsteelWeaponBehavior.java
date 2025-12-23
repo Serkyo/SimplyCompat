@@ -2,6 +2,7 @@ package com.serkyo.simplycompat.item.behavior;
 
 import com.serkyo.simplycompat.config.SCBakedConfigs;
 import com.serkyo.simplycompat.effect.DraconicResonance;
+import com.serkyo.simplycompat.effect.ScorchingHeat;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,6 +19,7 @@ public interface FireDragonsteelWeaponBehavior {
         if (shouldApply) {
             if (SCBakedConfigs.DRAGONSTEEL_REWORK) {
                 DraconicResonance.applyToEntity(attacker, "fire");
+                ScorchingHeat.applyToEntity(target, attacker);
             }
             else {
                 target.setSecondsOnFire(SCBakedConfigs.FIRE_DRAGONSTEEL_BURN_TIME);
