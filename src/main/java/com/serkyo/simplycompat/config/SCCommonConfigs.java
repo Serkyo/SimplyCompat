@@ -38,7 +38,13 @@ public class SCCommonConfigs {
     public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_RANGE;
     public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_DURATION;
     public static ForgeConfigSpec.DoubleValue FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER;
-    public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED;
+    public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_ABILITY_LEVEL_INCREMENTATION;
+    public static ForgeConfigSpec.IntValue ICE_DRAGONSTEEL_ABILITY_RANGE;
+    public static ForgeConfigSpec.IntValue ICE_DRAGONSTEEL_ABILITY_DURATION;
+    public static ForgeConfigSpec.DoubleValue ICE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER;
+    public static ForgeConfigSpec.DoubleValue ICE_DRAGONSTEEL_ABILITY_THRESHOLD_MULTIPLIER;
+    public static ForgeConfigSpec.DoubleValue ICE_DRAGONSTEEL_ABILITY_DAMAGE_INCREASE;
+    public static ForgeConfigSpec.DoubleValue ICE_DRAGONSTEEL_ABILITY_SHARDS_MULTIPLIER;
     public static ForgeConfigSpec.IntValue DRAGONSTEEL_KNOCKBACK;
     public static ForgeConfigSpec.IntValue FIRE_DRAGONSTEEL_BURN_TIME;
     public static ForgeConfigSpec.IntValue ICE_DRAGONSTEEL_FREEZE_TIME;
@@ -106,10 +112,22 @@ public class SCCommonConfigs {
                 .defineInRange("fireDragonsteelAbilityRange", 5, 1, Integer.MAX_VALUE);
         FIRE_DRAGONSTEEL_ABILITY_DURATION = BUILDER.comment("Duration of the fire dragonsteel weapon ability (in seconds)")
                 .defineInRange("fireDragonsteelAbilityDuration", 10, 1, Integer.MAX_VALUE);
-        FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER = BUILDER.comment("Damage multiplier of the fire dragonsteel weapon ability, scaling from the weapon's base damage")
+        FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER = BUILDER.comment("Damage multiplier of the fire dragonsteel weapon ability, scaling from the weapon's damage")
                 .defineInRange("fireDragonsteelAbilityDamageMultiplier", 0.5, 0, Double.MAX_VALUE);
-        FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED = BUILDER.comment("Level of the effect applied to the targets hit by the fire dragonsteel weapon ability")
-                .defineInRange("fireDragonsteelAbilityLevelApplied", 1, 1, 256);
+        FIRE_DRAGONSTEEL_ABILITY_LEVEL_INCREMENTATION = BUILDER.comment("Amount of the effect increased on the targets hit by the fire dragonsteel weapon ability")
+                .defineInRange("fireDragonsteelAbilityLevelIncrementation", 2, 1, 256);
+        ICE_DRAGONSTEEL_ABILITY_RANGE = BUILDER.comment("Range of the ice dragonsteel weapon ability")
+                .defineInRange("iceDragonsteelAbilityRange", 5, 1, Integer.MAX_VALUE);
+        ICE_DRAGONSTEEL_ABILITY_DURATION = BUILDER.comment("Duration of the ice dragonsteel weapon ability (in seconds)")
+                .defineInRange("iceDragonsteelAbilityDuration", 10, 1, Integer.MAX_VALUE);
+        ICE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER = BUILDER.comment("Damage multiplier of the ice dragonsteel weapon ability, scaling from the weapon's damage")
+                .defineInRange("iceDragonsteelAbilityDamageMultiplier", 0.5, 0, Double.MAX_VALUE);
+        ICE_DRAGONSTEEL_ABILITY_THRESHOLD_MULTIPLIER = BUILDER.comment("Multiplier for the damage threshold at which the shards will trigger on a target with max stacks, scaling from the weapon's damage")
+                .defineInRange("iceDragonsteelAbilityThresholdMultiplier", 5, 0, Double.MAX_VALUE);
+        ICE_DRAGONSTEEL_ABILITY_DAMAGE_INCREASE = BUILDER.comment("Damage increase caused by the ice dragonsteel weapon ability when it has reached max stacks on a target")
+                .defineInRange("iceDragonsteelAbilityDamageIncrease", 1.25, 0, Double.MAX_VALUE);
+        ICE_DRAGONSTEEL_ABILITY_SHARDS_MULTIPLIER = BUILDER.comment("Multiplier for the number of shards spawned from a target when it is damaged enough while having max stacks, scaling from the weapon's damage")
+                .defineInRange("iceDragonsteelAbilityShardMultiplier", 1, 0, Double.MAX_VALUE);
         BUILDER.pop();
         BUILDER.push("Dragonsteel-Base-Effect");
         DRAGONSTEEL_KNOCKBACK = BUILDER.comment("Knockback caused by the dragonsteel weapons (in blocks)")

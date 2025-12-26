@@ -5,7 +5,6 @@ import com.serkyo.simplycompat.core.SCEffects;
 import com.serkyo.simplycompat.utils.EntityUtils;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -14,7 +13,6 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.phys.AABB;
 
 import java.util.List;
@@ -34,17 +32,21 @@ public class ScorchingHeat extends MobEffect {
         }
     }
 
-    public static void applyToEntity(LivingEntity target, LivingEntity attacker) {
+    public static void applyToEntity(LivingEntity target, UUID attackerUUID, double attackerAttackValue) {
+        applyToEntity(target, attackerUUID, attackerAttackValue, 1);
+    }
+
+    public static void applyToEntity(LivingEntity target, UUID attackerUUID, double attackerAttackValue, int amplifierIncrementation) {
         MobEffectInstance scorchingHeatInstance = target.getEffect(SCEffects.SCORCHING_HEAT.get());
-        int amplifier = 0;
+        int newAmplifier = amplifierIncrementation - 1;
 
         if (scorchingHeatInstance != null) {
-            amplifier = scorchingHeatInstance.getAmplifier() + 1;
+            newAmplifier = Math.min(scorchingHeatInstance.getAmplifier() + amplifierIncrementation, 4);
         }
         CompoundTag targetNBTData = target.getPersistentData();
-        targetNBTData.putUUID("ScorchingHeatOwner", attacker.getUUID());
-        targetNBTData.putFloat("ScorchingHeatOwnerAttack", (float) attacker.getAttributeValue(Attributes.ATTACK_DAMAGE));
-        target.addEffect(new MobEffectInstance(SCEffects.SCORCHING_HEAT.get(), SCBakedConfigs.FIRE_DRAGONSTEEL_ABILITY_DURATION * 20, amplifier, false, true));
+        targetNBTData.putUUID("ScorchingHeatOwner", attackerUUID);
+        targetNBTData.putDouble("ScorchingHeatOwnerAttack", attackerAttackValue);
+        target.addEffect(new MobEffectInstance(SCEffects.SCORCHING_HEAT.get(), SCBakedConfigs.FIRE_DRAGONSTEEL_ABILITY_DURATION * 20, newAmplifier, false, true));
     }
 
     private static void triggerHeatWave(LivingEntity sourceEntity) {
@@ -67,10 +69,9 @@ public class ScorchingHeat extends MobEffect {
                     continue;
                 }
             }
-            CompoundTag targetNBTData = target.getPersistentData();
-            targetNBTData.putDouble("ScorchingHeatOwnerAttack", ownerAttackDamage / 2);
-            targetNBTData.putUUID("ScorchingHeatOwner", ownerUUID);
-            target.addEffect(new MobEffectInstance(SCEffects.SCORCHING_HEAT.get(), SCBakedConfigs.FIRE_DRAGONSTEEL_ABILITY_DURATION * 20, SCBakedConfigs.FIRE_DRAGONSTEEL_ABILITY_LEVEL_APPLIED - 1, false, true));
+            if (ownerAttackDamage / 2 >= 2) {
+                applyToEntity(target, ownerUUID, ownerAttackDamage / 2, SCBakedConfigs.FIRE_DRAGONSTEEL_ABILITY_LEVEL_INCREMENTATION);
+            }
             target.hurt(target.damageSources().magic(), (float) (ownerAttackDamage * SCBakedConfigs.FIRE_DRAGONSTEEL_ABILITY_DAMAGE_MULTIPLIER));
         }
         sourceEntity.removeEffect(SCEffects.SCORCHING_HEAT.get());
